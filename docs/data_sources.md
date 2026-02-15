@@ -50,3 +50,27 @@
 If KNBS/CBK data proves difficult on mobile:
 - Focus exclusively on World Bank API (sufficient for quality project)
 - Supplement with FRED (Federal Reserve Economic Data) for international comparisons
+
+## Final Indicator Selection
+
+| Indicator | Code | Reason |
+|-----------|------|--------|
+| GDP Current | NY.GDP.MKTP.CD | Core measure of economic size |
+| GDP Growth | NY.GDP.MKTP.KD.ZG | Economic trajectory |
+| Inflation | FP.CPI.TOTL.ZG | Price stability indicator |
+| Unemployment | SL.UEM.TOTL.ZS | Labor market health |
+| Exports (% GDP) | NE.EXP.GNFS.ZS | Trade competitiveness |
+| Imports (% GDP) | NE.IMP.GNFS.ZS | Import dependency |
+| Tax Revenue (% GDP) | GC.TAX.TOTL.GD.ZS | Fiscal capacity |
+| External Debt | DT.DOD.DECT.CD | Debt sustainability |
+
+## KNBS Assessment (Day 1)
+
+- ✅ **Found**: Quarterly GDP by sector (likely in Excel/PDF format)
+- ⚠️ **Accessibility issue**: Monthly CPI data (PDF format - will need extraction)
+- ⚠️ **Accessibility issue**: Labor force surveys (PDF format - complex tables)
+- ⏳ **Pending**: Trade statistics (may require account creation or manual download)
+
+**Decision**: Proceed with World Bank API as primary source. KNBS as supplement only if:
+1. There are specific gaps in WDI data (e.g., quarterly vs annual frequency)
+2. A specific insight requires sectoral breakdown not available in WDI

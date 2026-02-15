@@ -1,0 +1,13 @@
+# R Package Dependencies for Kenya Economic Dashboard
+# Install with: install.packages(readLines("requirements.txt"))
+
+tidyverse      # data manipulation and visualization
+lubridate      # date handling
+shiny          # interactive dashboard
+shinydashboard # dashboard layout components
+plotly         # interactive plots
+DT             # interactive data tables
+scales         # axis formatting
+WDI            # World Bank Data API
+rmarkdown      # documentation
+here           # relative file paths

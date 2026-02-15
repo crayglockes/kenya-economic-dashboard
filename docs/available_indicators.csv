@@ -1,0 +1,882 @@
+indicator,name
+6.0.GDP_current,GDP (current $)
+6.0.GDP_growth,GDP growth (annual %)
+6.0.GDP_usd,GDP (constant 2005 $)
+6.0.GDPpc_constant,"GDP per capita, PPP (constant 2011 international $) "
+BG.GSR.NFSV.GD.ZS,Trade in services (% of GDP)
+BG.KAC.FNEI.GD.PP.ZS,"Gross private capital flows (% of GDP, PPP)"
+BG.KAC.FNEI.GD.ZS,Gross private capital flows (% of GDP)
+BG.KLT.DINV.GD.PP.ZS,"Gross foreign direct investment (% of GDP, PPP)"
+BG.KLT.DINV.GD.ZS,Gross foreign direct investment (% of GDP)
+BI.WAG.TOTL.GD.ZS,Wage bill as a percentage of GDP
+BM.GSR.MRCH.ZS,Merchandise imports (BOP): percentage of GDP (%)
+BM.KLT.DINV.GD.ZS,"Foreign direct investment, net outflows (% of GDP)"
+BM.KLT.DINV.WD.GD.ZS,"Foreign direct investment, net outflows (% of GDP)"
+BN.CAB.XOKA.GD.ZS,Current account balance (% of GDP)
+BN.CAB.XOKA.GDP.ZS,Current account balance (% of GDP)
+BN.CAB.XOTR.ZS,Curr. acc. bal. before official transf. (% of GDP)
+BN.CUR.GDPM.ZS,Current account balance excluding net official capital grants (% of GDP)
+BN.GSR.FCTY.CD.ZS,Net income (% of GDP)
+BN.GSR.GNFS.CD,"Net trade in goods and services (BoP, current US$)"
+BN.GSR.MRCH.CD,"Net trade in goods (BoP, current US$)"
+BN.KLT.DINV.CD.ZS,Foreign direct investment (% of GDP)
+BN.KLT.DINV.DRS.GDP.ZS,"Foreign direct investment, net inflows (% of GDP)"
+BN.KLT.PRVT.GD.ZS,"Private capital flows, total (% of GDP)"
+BN.TRF.CURR.CD.ZS,Net current transfers (% of GDP)
+BX.GSR.MRCH.ZS,Merchandise exports (BOP): percentage of GDP (%)
+BX.KLT.DINV.DT.GD.ZS,"Foreign direct investment, net inflows (% of GDP)"
+BX.KLT.DINV.WD.GD.ZS,"Foreign direct investment, net inflows (% of GDP)"
+BX.TRF.MGR.DT.GD.ZS,Migrant remittance inflows (% of GDP)
+BX.TRF.PWKR.DT.GD.ZS,"Personal remittances, received (% of GDP)"
+BX.TRF.PWKR.GD.ZS,"Workers' remittances, receipts (% of GDP)"
+CC.ENTX.ENE.ZS,Total energy tax revenue (% of GDP)
+CC.ENTX.ENV.ZS,Total environmental tax revenue (% of GDP)
+CC.ENV.TRAD.EX,Trade in environmental goods as share of total exports (%)
+CC.ENV.TRAD.IM,Trade in environmental goods as share of total imports (%)
+CC.GHG.MEMG.EI,Macro drivers of GHG emissions growth in the period 2012-2018 - Emission Intensity of GDP
+CC.GHG.MEMG.GC,Macro drivers of GHG emissions growth in the period 2012-2018 - GDP per capita
+CC.INCP.ALRS,"Annual investment needs for coastal protection, by risk strategy (% of GDP) - low risk tolerance"
+CC.INCP.KRGC,"Annual investment needs for coastal protection, by risk strategy (% of GDP) - constant relative flood risk"
+CC.INCP.SPMC,"Annual investment needs for coastal protection, by risk strategy (% of GDP) - optimal protection"
+CC.RISK.AST.ZS,Risk to asset (average annual losses as % of GDP)
+CC.RISK.WELL.ZS,Risk to wellbeing (average annual losses as % of GDP)
+CC.SP.EXP.ZS,Public social protection expenditure (%of GDP)
+CM.FIN.INTL.GD.ZS,"Financing via international capital markets (gross inflows, % of GDP)"
+CM.MKT.LCAP.GD.ZS,Market capitalization of listed domestic companies (% of GDP)
+CM.MKT.TRAD.CD,"Stocks traded, total value (current US$)"
+CM.MKT.TRAD.GD.ZS,"Stocks traded, total value (% of GDP)"
+CM.MKT.TRNR,"Stocks traded, turnover ratio of domestic shares (%)"
+DAK.TRAD.CR,Total Specific Allocation Grant for Trade (in IDR Billion)
+DP.DOD.DECD.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, All instruments, Domestic creditors, Nominal Value, % of GDP"
+DP.DOD.DECD.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, All instruments, Domestic creditors, Nominal Value, % of GDP"
+DP.DOD.DECD.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, All instruments, Domestic creditors, Nominal Value, % of GDP"
+DP.DOD.DECD.CR.GG.Z1,"Gross PSD, General Gov., All maturities, All instruments, Domestic creditors, Nominal Value, % of GDP"
+DP.DOD.DECD.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, All instruments, Domestic creditors, Nominal Value, % of GDP"
+DP.DOD.DECF.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, All instruments, Foreign currency, Nominal Value, % of GDP"
+DP.DOD.DECF.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, All instruments, Foreign currency, Nominal Value, % of GDP"
+DP.DOD.DECF.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, All instruments, Foreign currency, Nominal Value, % of GDP"
+DP.DOD.DECF.CR.GG.Z1,"Gross PSD, General Gov., All maturities, All instruments, Foreign currency, Nominal Value, % of GDP"
+DP.DOD.DECF.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, All instruments, Foreign currency, Nominal Value, % of GDP"
+DP.DOD.DECN.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, All instruments, Domestic currency, Nominal Value, % of GDP"
+DP.DOD.DECN.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, All instruments, Domestic currency, Nominal Value, % of GDP"
+DP.DOD.DECN.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, All instruments, Domestic currency, Nominal Value, % of GDP"
+DP.DOD.DECN.CR.GG.Z1,"Gross PSD, General Gov., All maturities, All instruments, Domestic currency, Nominal Value, % of GDP"
+DP.DOD.DECN.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, All instruments, Domestic currency, Nominal Value, % of GDP"
+DP.DOD.DECT.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, All instruments, Nominal Value, % of GDP"
+DP.DOD.DECT.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, All instruments, Nominal Value, % of GDP"
+DP.DOD.DECT.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, All instruments, Nominal Value, % of GDP"
+DP.DOD.DECT.CR.GG.Z1,"Gross PSD, General Gov., All maturities, All instruments, Nominal Value, % of GDP"
+DP.DOD.DECT.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, All instruments, Nominal Value, % of GDP"
+DP.DOD.DECX.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, All instruments, External creditors, Nominal Value, % of GDP"
+DP.DOD.DECX.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, All instruments, External creditors, Nominal Value, % of GDP"
+DP.DOD.DECX.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, All instruments, External creditors, Nominal Value, % of GDP"
+DP.DOD.DECX.CR.GG.Z1,"Gross PSD, General Gov., All maturities, All instruments, External creditors, Nominal Value, % of GDP"
+DP.DOD.DECX.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, All instruments, External creditors, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.GG.Z1,"Gross PSD, General Gov., All maturities, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.L1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in one year or less, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.L1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in one year or less, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.L1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in one year or less, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.L1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in one year or less, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.L1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in one year or less, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.M1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in more than one year, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.M1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in more than one year, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.M1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in more than one year, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.M1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in more than one year, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.M1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in more than one year, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLCD.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLD1.CR.CG.Z1,"Gross PSD, Central Gov.-D1, All maturities, Debt securities + loans, Nominal Value, % of GDP"
+DP.DOD.DLD1.CR.GG.Z1,"Gross PSD, General Gov.-D1, All maturities, Debt securities + loans, Nominal Value, % of GDP"
+DP.DOD.DLD2.CR.CG.Z1,"Gross PSD, Central Gov.-D2, All maturities, D1+ SDRs + currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLD2.CR.GG.Z1,"Gross PSD, General Gov.-D2, All maturities, D1+ SDRs + currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DLD2A.CR.CG.Z1,"Gross PSD, Central Gov.-D2A, All maturities, D1+ currency and deposits, Maastricht debt, % of GDP"
+DP.DOD.DLD2A.CR.GG.Z1,"Gross PSD, General Gov.-D2A, All maturities, D1+ currency and deposits, Maastricht debt, % of GDP"
+DP.DOD.DLD3.CR.CG.Z1,"Gross PSD, Central Gov.-D3, All maturities, D2+other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLD3.CR.GG.Z1,"Gross PSD, General Gov.-D3, All maturities, D2+other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLD4.CR.CG.Z1,"Gross PSD, Central Gov.-D4, All maturities, D3+insurance, pensions, and standardized guarantees, Nominal Value, % of GDP"
+DP.DOD.DLD4.CR.GG.Z1,"Gross PSD, General Gov.-D4, All maturities, D3+insurance, pensions, and standardized guarantees, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.GG.Z1,"Gross PSD, General Gov., All maturities, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.L1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in one year or less, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.L1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in one year or less, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.L1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in one year or less, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.L1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in one year or less, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.L1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in one year or less, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.M1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in more than one year, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.M1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in more than one year, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.M1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in more than one year, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.M1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in more than one year, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.M1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in more than one year, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLDS.CR.MV.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, Debt Securities, Market value, % of GDP"
+DP.DOD.DLDS.CR.MV.CG.Z1,"Gross PSD, Central Gov., All maturities, Debt Securities, Market value, % of GDP"
+DP.DOD.DLDS.CR.MV.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, Debt Securities, Market value, % of GDP"
+DP.DOD.DLDS.CR.MV.GG.Z1,"Gross PSD, General Gov., All maturities, Debt Securities, Market value, % of GDP"
+DP.DOD.DLDS.CR.MV.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, Debt Securities, Market value, % of GDP"
+DP.DOD.DLDS.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.GG.Z1,"Gross PSD, General Gov., All maturities, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.L1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in one year or less, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.L1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in one year or less, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.L1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in one year or less, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.L1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in one year or less, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.L1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in one year or less, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.M1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in more than one year, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.M1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in more than one year, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.M1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in more than one year, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.M1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in more than one year, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.M1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in more than one year, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLIN.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.GG.Z1,"Gross PSD, General Gov., All maturities, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.L1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in one year or less, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.L1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in one year or less, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.L1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in one year or less, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.L1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in one year or less, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.L1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in one year or less, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.M1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in more than one year, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.M1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in more than one year, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.M1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in more than one year, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.M1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in more than one year, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.M1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in more than one year, Loans, Nominal Value, % of GDP"
+DP.DOD.DLLO.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, Loans, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.GG.Z1,"Gross PSD, General Gov., All maturities, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.L1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in one year or less, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.L1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in one year or less, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.L1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in one year or less, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.L1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in one year or less, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.L1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in one year or less, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.M1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in more than one year, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.M1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in more than one year, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.M1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in more than one year, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.M1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in more than one year, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.M1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in more than one year, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLOA.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., All maturities, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.CG.Z1,"Gross PSD, Central Gov., All maturities, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.FC.Z1,"Gross PSD, Financial Public Corp., All maturities, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.GG.Z1,"Gross PSD, General Gov., All maturities, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.M1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in more than one year, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.M1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in more than one year, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.M1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in more than one year, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.M1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in more than one year, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.M1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in more than one year, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLSD.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., All maturities, Special Drawing Rights, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.CG.Z1,"Gross PSD, Central Gov., Long-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.GG.Z1,"Gross PSD, General Gov., Long-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.L1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in one year or less, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.L1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in one year or less, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.L1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in one year or less, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.L1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in one year or less, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.L1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in one year or less, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.M1.BC.Z1,"Gross PSD, Budgetary Central Gov., Long-term, With payment due in more than one year, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.M1.CG.Z1,"Gross PSD, Central Gov., Long-term, With payment due in more than one year, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.M1.FC.Z1,"Gross PSD, Financial Public Corp., Long-term, With payment due in more than one year, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.M1.GG.Z1,"Gross PSD, General Gov., Long-term, With payment due in more than one year, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.M1.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, With payment due in more than one year, All instruments, Nominal Value, % of GDP"
+DP.DOD.DLTC.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Long-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DSCD.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., Short-term, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DSCD.CR.CG.Z1,"Gross PSD, Central Gov., Short-term, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DSCD.CR.FC.Z1,"Gross PSD, Financial Public Corp., Short-term, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DSCD.CR.GG.Z1,"Gross PSD, General Gov., Short-term, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DSCD.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Short-term, Currency and deposits, Nominal Value, % of GDP"
+DP.DOD.DSDS.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., Short-term, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DSDS.CR.CG.Z1,"Gross PSD, Central Gov., Short-term, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DSDS.CR.FC.Z1,"Gross PSD, Financial Public Corp., Short-term, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DSDS.CR.GG.Z1,"Gross PSD, General Gov., Short-term, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DSDS.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Short-term, Debt securities, Nominal Value, % of GDP"
+DP.DOD.DSIN.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., Short-term, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DSIN.CR.CG.Z1,"Gross PSD, Central Gov., Short-term, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DSIN.CR.FC.Z1,"Gross PSD, Financial Public Corp., Short-term, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DSIN.CR.GG.Z1,"Gross PSD, General Gov., Short-term, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DSIN.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Short-term, Insurance, pensions, and standardized guarantee schemes, Nominal Value, % of GDP"
+DP.DOD.DSLO.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., Short-term, Loans, Nominal Value, % of GDP"
+DP.DOD.DSLO.CR.CG.Z1,"Gross PSD, Central Gov., Short-term, Loans, Nominal Value, % of GDP"
+DP.DOD.DSLO.CR.FC.Z1,"Gross PSD, Financial Public Corp., Short-term, Loans, Nominal Value, % of GDP"
+DP.DOD.DSLO.CR.GG.Z1,"Gross PSD, General Gov., Short-term, Loans, Nominal Value, % of GDP"
+DP.DOD.DSLO.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Short-term, Loans, Nominal Value, % of GDP"
+DP.DOD.DSOA.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., Short-term, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DSOA.CR.CG.Z1,"Gross PSD, Central Gov., Short-term, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DSOA.CR.FC.Z1,"Gross PSD, Financial Public Corp., Short-term, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DSOA.CR.GG.Z1,"Gross PSD, General Gov., Short-term, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DSOA.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Short-term, Other accounts payable, Nominal Value, % of GDP"
+DP.DOD.DSTC.CR.BC.Z1,"Gross PSD, Budgetary Central Gov., Short-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DSTC.CR.CG.Z1,"Gross PSD, Central Gov., Short-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DSTC.CR.FC.Z1,"Gross PSD, Financial Public Corp., Short-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DSTC.CR.GG.Z1,"Gross PSD, General Gov., Short-term, All instruments, Nominal Value, % of GDP"
+DP.DOD.DSTC.CR.NF.Z1,"Gross PSD, Nonfinancial Public Corp., Short-term, All instruments, Nominal Value, % of GDP"
+DT.AMT.DLTT.CD.CB.AR.03.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 0 to 3, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.CB.AR.0912.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 9 to 12, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.CB.AR.1218.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 12 to 18, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.CB.AR.1824.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 18 to 24, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.CB.AR.24P.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 2yrs, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.CB.AR.36.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 3 to 6, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.CB.AR.69.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 6 to 9, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.CB.AR.IQ.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, Immediate, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.03.US,"Gross Ext. Debt Pmt, General Government, More than 0 to 3, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.0912.US,"Gross Ext. Debt Pmt, General Government, More than 9 to 12, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.1218.US,"Gross Ext. Debt Pmt, General Government, More than 12 to 18, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.1824.US,"Gross Ext. Debt Pmt, General Government, More than 18 to 24, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.24P.US,"Gross Ext. Debt Pmt, General Government, More than 2yrs, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.36.US,"Gross Ext. Debt Pmt, General Government, More than 3 to 6, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.69.US,"Gross Ext. Debt Pmt, General Government, More than 6 to 9, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.GG.AR.IQ.US,"Gross Ext. Debt Pmt, General Government, Immediate, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.03.US,"Gross Ext. Debt Pmt, Central Bank, More than 0 to 3, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.0912.US,"Gross Ext. Debt Pmt, Central Bank, More than 9 to 12, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.1218.US,"Gross Ext. Debt Pmt, Central Bank, More than 12 to 18, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.1824.US,"Gross Ext. Debt Pmt, Central Bank, More than 18 to 24, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.24P.US,"Gross Ext. Debt Pmt, Central Bank, More than 2yrs, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.36.US,"Gross Ext. Debt Pmt, Central Bank, More than 3 to 6, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.69.US,"Gross Ext. Debt Pmt, Central Bank, More than 6 to 9, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.MA.AR.IQ.US,"Gross Ext. Debt Pmt, Central Bank, Immediate, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.03.US,"Gross Ext. Debt Pmt, Other Sectors, More than 0 to 3, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.0912.US,"Gross Ext. Debt Pmt, Other Sectors, More than 9 to 12, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.1218.US,"Gross Ext. Debt Pmt, Other Sectors, More than 12 to 18, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.1824.US,"Gross Ext. Debt Pmt, Other Sectors, More than 18 to 24, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.24P.US,"Gross Ext. Debt Pmt, Other Sectors, More than 2yrs, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.36.US,"Gross Ext. Debt Pmt, Other Sectors, More than 3 to 6, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.69.US,"Gross Ext. Debt Pmt, Other Sectors, More than 6 to 9, Trade credit and advances, Principal, USD"
+DT.AMT.DLTT.CD.OT.AR.IQ.US,"Gross Ext. Debt Pmt, Other Sectors, Immediate, Trade credit and advances, Principal, USD"
+DT.DOD.ALLC.ZSG,Debt on Concessional terms to GDP (% of GDP)
+DT.DOD.ALLN.ZSG,Debt on Non-concessional terms to GDP (% of GDP)
+DT.DOD.DECT.CD.ZSG,"Debt outstanding and disbursed, Total to GDP (% of GDP)"
+DT.DOD.DLTT.CD.CB.AR.BE.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DLTT.CD.CB.AR.EA.US,"Ext. Assets in Debt Instruments, Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.CB.AR.EN.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, end of period, USD"
+DT.DOD.DLTT.CD.CB.AR.EX.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DLTT.CD.CB.AR.GE.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, Beginning pos., USD"
+DT.DOD.DLTT.CD.CB.AR.NE.US,"Net Ext. Debt Position, Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.CB.AR.OC.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DLTT.CD.CB.AR.PX.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DLTT.CD.CB.AR.TR.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DLTT.CD.CB.AR.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.GG.AR.BE.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DLTT.CD.GG.AR.EA.US,"Ext. Assets in Debt Instruments, General Government, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.GG.AR.EN.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, end of period, USD"
+DT.DOD.DLTT.CD.GG.AR.EX.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DLTT.CD.GG.AR.GE.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, Beginning pos., USD"
+DT.DOD.DLTT.CD.GG.AR.NE.US,"Net Ext. Debt Position, General Government, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.GG.AR.OC.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DLTT.CD.GG.AR.PX.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DLTT.CD.GG.AR.TR.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DLTT.CD.GG.AR.US,"Gross Ext. Debt Pos., General Government, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.HN.US,"Gross Ext. Debt Pos., HH and nonprofit institu. (NPISHs), Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.MA.AR.BE.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DLTT.CD.MA.AR.EA.US,"Ext. Assets in Debt Instruments, Central Bank, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.MA.AR.EN.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances, end of period, USD"
+DT.DOD.DLTT.CD.MA.AR.EX.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DLTT.CD.MA.AR.GE.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances , Beginning pos., USD"
+DT.DOD.DLTT.CD.MA.AR.NE.US,"Net Ext. Debt Position, Central Bank, Long-term, Trade credit and advances , USD"
+DT.DOD.DLTT.CD.MA.AR.OC.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DLTT.CD.MA.AR.PX.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DLTT.CD.MA.AR.TR.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DLTT.CD.MA.AR.US,"Gross Ext. Debt Pos., Central Bank, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.NC.US,"Gross Ext. Debt Pos., Nonfinancial corporations, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.OF.US,"Gross Ext. Debt Pos., Other financial corporations, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.OT.AR.BE.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DLTT.CD.OT.AR.EA.US,"Ext. Assets in Debt Instruments, Other Sectors, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.OT.AR.EN.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, end of period, USD"
+DT.DOD.DLTT.CD.OT.AR.EX.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DLTT.CD.OT.AR.GE.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, Beginning pos., USD"
+DT.DOD.DLTT.CD.OT.AR.NE.US,"Net Ext. Debt Position, Other Sectors, Long-term, Trade credit and advances, USD"
+DT.DOD.DLTT.CD.OT.AR.OC.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DLTT.CD.OT.AR.PX.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DLTT.CD.OT.AR.TR.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DLTT.CD.OT.AR.US,"Gross Ext. Debt Pos., Other Sectors, Long-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.CB.AR.BE.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DSTT.CD.CB.AR.EA.US,"Ext. Assets in Debt Instruments, Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.CB.AR.EN.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, end of period, USD"
+DT.DOD.DSTT.CD.CB.AR.EX.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DSTT.CD.CB.AR.GE.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, Beginning pos., USD"
+DT.DOD.DSTT.CD.CB.AR.NE.US,"Net Ext. Debt Position, Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.CB.AR.OC.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DSTT.CD.CB.AR.PX.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DSTT.CD.CB.AR.TR.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DSTT.CD.CB.AR.US,"Gross Ext. Debt Pos., Deposit-Taking Corp., exc. CB, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.GG.AR.BE.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DSTT.CD.GG.AR.EA.US,"Ext. Assets in Debt Instruments, General Government, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.GG.AR.EN.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, end of period, USD"
+DT.DOD.DSTT.CD.GG.AR.EX.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DSTT.CD.GG.AR.GE.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, Beginning pos., USD"
+DT.DOD.DSTT.CD.GG.AR.NE.US,"Net Ext. Debt Position, General Government, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.GG.AR.OC.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DSTT.CD.GG.AR.PX.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DSTT.CD.GG.AR.TR.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DSTT.CD.GG.AR.US,"Gross Ext. Debt Pos., General Government, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.HN.US,"Gross Ext. Debt Pos., HH and nonprofit institu. (NPISHs), Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.MA.AR.BE.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DSTT.CD.MA.AR.EA.US,"Ext. Assets in Debt Instruments, Central Bank, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.MA.AR.EN.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, end of period, USD"
+DT.DOD.DSTT.CD.MA.AR.EX.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DSTT.CD.MA.AR.GE.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, Beginning pos., USD"
+DT.DOD.DSTT.CD.MA.AR.NE.US,"Net Ext. Debt Position, Central Bank, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.MA.AR.OC.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DSTT.CD.MA.AR.PX.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DSTT.CD.MA.AR.TR.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DSTT.CD.MA.AR.US,"Gross Ext. Debt Pos., Central Bank, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.NC.US,"Gross Ext. Debt Pos., Nonfinancial corporations, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.OF.US,"Gross Ext. Debt Pos., Other financial corporations, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.OT.AR.BE.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, Beginning of period, USD"
+DT.DOD.DSTT.CD.OT.AR.EA.US,"Ext. Assets in Debt Instruments, Other Sectors, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.OT.AR.EN.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, end of period, USD"
+DT.DOD.DSTT.CD.OT.AR.EX.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, Exchange rate chg, USD"
+DT.DOD.DSTT.CD.OT.AR.GE.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, Beginning pos., USD"
+DT.DOD.DSTT.CD.OT.AR.NE.US,"Net Ext. Debt Position, Other Sectors, Short-term, Trade credit and advances, USD"
+DT.DOD.DSTT.CD.OT.AR.OC.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, Other chg in vol., USD"
+DT.DOD.DSTT.CD.OT.AR.PX.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, Other price chg, USD"
+DT.DOD.DSTT.CD.OT.AR.TR.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, Transactions, USD"
+DT.DOD.DSTT.CD.OT.AR.US,"Gross Ext. Debt Pos., Other Sectors, Short-term, Trade credit and advances, USD"
+DT.DOD.PRTC.LT.AR.US,"Publicly Guar. Private Sector Ext. Debt Pos., Long-term, Trade credit and advances, USD"
+DT.DOD.PRTC.ST.AR.US,"Publicly Guar. Private Sector Ext. Debt Pos., Short-term, Trade credit and advances, USD"
+DT.DOD.PUTC.LT.AR.US,"Public Sector Ext. Debt Pos., Long-term, Trade credit and advances, USD"
+DT.DOD.PUTC.ST.AR.US,"Public Sector Ext. Debt Pos., Short-term, Trade credit and advances, USD"
+DT.DOD.TCLT.CD.PR.AR.US,"Gross Ext. Debt Pos., Publicly Guar. Private Sector Ext. Debt, Long-term, Trade credit and advances, USD"
+DT.DOD.TCLT.CD.PU.AR.US,"Gross Ext. Debt Pos., Public Sector Ext. Debt, Long-term, Trade credit and advances, USD"
+DT.DOD.TCST.CD.PR.AR.US,"Gross Ext. Debt Pos., Publicly Guar. Private Sector Ext. Debt, Short-term, Trade credit and advances, USD"
+DT.DOD.TCST.CD.PU.AR.US,"Gross Ext. Debt Pos., Public Sector Ext. Debt, Short-term, Trade credit and advances, USD"
+DT.DOR.DLTT.CD.CB.US,"Gross Ext. Debt Pos., ST Rem., Deposit-Taking Corp., exc. CB, LT debt obg pmt 1year or less, Trade credit and advances, USD"
+DT.DOR.DLTT.CD.GG.AR.US,"Gross Ext. Debt Pos., ST Rem., General Government, LT debt obg pmt 1year or less, Trade credit and advances, USD"
+DT.DOR.DLTT.CD.MA.AR.US,"Gross Ext. Debt Pos., ST Rem., Central Bank, LT debt obg pmt 1year or less, Trade credit and advances, USD"
+DT.DOR.DLTT.CD.OT.AR.US,"Gross Ext. Debt Pos., ST Rem., Other Sectors, LT debt obg pmt 1year or less, Trade credit and advances, USD"
+DT.DOR.DSTT.CD.CB.AR.US,"Gross Ext. Debt Pos., ST Rem., Deposit-Taking Corp., exc. CB, ST debt on orig. maturity, Trade credit and advances, USD"
+DT.DOR.DSTT.CD.GG.AR.US,"Gross Ext. Debt Pos., ST Rem., General Government, ST debt on orig. maturity, Trade credit and advances, USD"
+DT.DOR.DSTT.CD.MA.AR.US,"Gross Ext. Debt Pos., ST Rem., Central Bank, ST debt on orig. maturity, Trade credit and advances, USD"
+DT.DOR.DSTT.CD.OT.AR.US,"Gross Ext. Debt Pos., ST Rem., Other Sectors, ST debt on orig. maturity, Trade credit and advances, USD"
+DT.INT.DLTT.CD.CB.AR.03.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 0 to 3, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.CB.AR.0912.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 9 to 12, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.CB.AR.1218.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 12 to 18, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.CB.AR.1824.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 18 to 24, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.CB.AR.24P.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 2yrs, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.CB.AR.36.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 3 to 6, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.CB.AR.69.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 6 to 9, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.CB.AR.IQ.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, Immediate, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.03.US,"Gross Ext. Debt Pmt, General Government, More than 0 to 3, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.0912.US,"Gross Ext. Debt Pmt, General Government, More than 9 to 12, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.1218.US,"Gross Ext. Debt Pmt, General Government, More than 12 to 18, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.1824.US,"Gross Ext. Debt Pmt, General Government, More than 18 to 24, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.24P.US,"Gross Ext. Debt Pmt, General Government, More than 2yrs, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.36.US,"Gross Ext. Debt Pmt, General Government, More than 3 to 6, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.69.US,"Gross Ext. Debt Pmt, General Government, More than 6 to 9, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.GG.AR.IQ.US,"Gross Ext. Debt Pmt, General Government, Immediate, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.03.US,"Gross Ext. Debt Pmt, Central Bank, More than 0 to 3, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.0912.US,"Gross Ext. Debt Pmt, Central Bank, More than 9 to 12, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.1218.US,"Gross Ext. Debt Pmt, Central Bank, More than 12 to 18, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.1824.US,"Gross Ext. Debt Pmt, Central Bank, More than 18 to 24, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.24P.US,"Gross Ext. Debt Pmt, Central Bank, More than 2yrs, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.36.US,"Gross Ext. Debt Pmt, Central Bank, More than 3 to 6, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.69.US,"Gross Ext. Debt Pmt, Central Bank, More than 6 to 9, Trade credit and advances, Interest, USD"
+DT.INT.DLTT.CD.MA.AR.IQ.US,"Gross Ext. Debt Pmt, Central Bank, Immediate, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.03.US,"Gross Ext. Debt Pmt, Other Sectors, More than 0 to 3, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.0912.US,"Gross Ext. Debt Pmt, Other Sectors, More than 9 to 12, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.1218.US,"Gross Ext. Debt Pmt, Other Sectors, More than 12 to 18, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.1824.US,"Gross Ext. Debt Pmt, Other Sectors, More than 18 to 24, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.24P.US,"Gross Ext. Debt Pmt, Other Sectors, More than 2yrs, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.36.US,"Gross Ext. Debt Pmt, Other Sectors, More than 3 to 6, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.69.US,"Gross Ext. Debt Pmt, Other Sectors, More than 6 to 9, Trade credit and advances, Interest, USD"
+DT.INTS.DLTT.CD.OT.AR.IQ.US,"Gross Ext. Debt Pmt, Other Sectors, Immediate, Trade credit and advances, Interest, USD"
+DT.ODA.ALLD.GD.ZS,Net ODA received (% of GDP)
+DT.ODA.DACD.PROD.TRDP.CD,"Gross ODA aid disbursement for trade policy and regulations, DAC donors total (current US$)"
+DT.ODA.DACD.ZSG,Net ODA received from DAC donors (% of recipient's GDP)
+DT.ODA.MULT.ZSG,Net ODA received from multilateral donors (% of GDP)
+DT.ODA.NDAC.ZSG,Net ODA received from non-DAC bilateral donors (% of GDP)
+DT.ODA.ODAT.GD.ZS,Net ODA received (% of GDP)
+DT.TDS.DECT.GD.ZS,Total debt service (% of GDP)
+DT.TDS.DLTT.CD.CB.AR.03.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 0 to 3, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.CB.AR.0912.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 9 to 12, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.CB.AR.1218.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 12 to 18, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.CB.AR.1824.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 18 to 24, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.CB.AR.24P.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 2yrs, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.CB.AR.36.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 3 to 6, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.CB.AR.69.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, More than 6 to 9, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.CB.AR.IQ.US,"Gross Ext. Debt Pmt, Deposit-Taking Corp., exc. CB, Immediate, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.03.US,"Gross Ext. Debt Pmt, General Government, More than 0 to 3, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.0912.US,"Gross Ext. Debt Pmt, General Government, More than 9 to 12, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.1218.US,"Gross Ext. Debt Pmt, General Government, More than 12 to 18, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.1824.US,"Gross Ext. Debt Pmt, General Government, More than 18 to 24, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.24P.US,"Gross Ext. Debt Pmt, General Government, More than 2yrs, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.36.US,"Gross Ext. Debt Pmt, General Government, More than 3 to 6, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.69.US,"Gross Ext. Debt Pmt, General Government, More than 6 to 9, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.GG.AR.IQ.US,"Gross Ext. Debt Pmt, General Government, Immediate, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.03.US,"Gross Ext. Debt Pmt, Central Bank, More than 0 to 3, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.0912.US,"Gross Ext. Debt Pmt, Central Bank, More than 9 to 12, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.1218.US,"Gross Ext. Debt Pmt, Central Bank, More than 12 to 18, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.1824.US,"Gross Ext. Debt Pmt, Central Bank, More than 18 to 24, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.24P.US,"Gross Ext. Debt Pmt, Central Bank, More than 2yrs, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.36.US,"Gross Ext. Debt Pmt, Central Bank, More than 3 to 6, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.69.US,"Gross Ext. Debt Pmt, Central Bank, More than 6 to 9, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.MA.AR.IQ.US,"Gross Ext. Debt Pmt, Central Bank, Immediate, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.03.US,"Gross Ext. Debt Pmt, Other Sectors, More than 0 to 3, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.0912.US,"Gross Ext. Debt Pmt, Other Sectors, More than 9 to 12, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.1218.US,"Gross Ext. Debt Pmt, Other Sectors, More than 12 to 18, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.1824.US,"Gross Ext. Debt Pmt, Other Sectors, More than 18 to 24, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.24P.US,"Gross Ext. Debt Pmt, Other Sectors, More than 2yrs, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.36.US,"Gross Ext. Debt Pmt, Other Sectors, More than 3 to 6, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.69.US,"Gross Ext. Debt Pmt, Other Sectors, More than 6 to 9, Trade credit and advances, Prin. and Int., USD"
+DT.TDS.DLTT.CD.OT.AR.IQ.US,"Gross Ext. Debt Pmt, Other Sectors, Immediate, Trade credit and advances, Prin. and Int., USD"
+EG.EGY.PRIM.PP.KD,Energy intensity level of primary energy (MJ/$2017 PPP GDP)
+EG.GDP.PUSE.KO.87,GDP per unit of energy use (1987 US$ per kg of oil equivalent)
+EG.GDP.PUSE.KO.KD,GDP per unit of energy use (2000 US$ per kg of oil equivalent)
+EG.GDP.PUSE.KO.PP,GDP per unit of energy use (PPP $ per kg of oil equivalent)
+EG.GDP.PUSE.KO.PP.KD,GDP per unit of energy use (constant 2021 PPP $ per kg of oil equivalent)
+EG.USE.COMM.GD.PP.KD,"Energy use (kg of oil equivalent) per $1,000 GDP (constant 2021 PPP)"
+EN.ATM.CO2E.GDP,"CO2 emissions, industrial (kg per 1987 US$ of GDP)"
+EN.ATM.CO2E.KD.87.GD,"CO2 emissions, industrial (kg per 1987 US$ of GDP)"
+EN.ATM.CO2E.KD.GD,CO2 emissions (kg per 2015 US$ of GDP)
+EN.ATM.CO2E.PP.GD,CO2 emissions (kg per PPP $ of GDP)
+EN.ATM.CO2E.PP.GD.KD,CO2 emissions (kg per 2021 PPP $ of GDP)
+EN.GHG.CO2.RT.GDP.KD,Carbon intensity of GDP (kg CO2e per constant 2015 US$ of GDP)
+EN.GHG.CO2.RT.GDP.PP.KD,Carbon intensity of GDP (kg CO2e per 2021 PPP $ of GDP)
+ER.GDP.FWTL.M3.KD,"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)"
+EU.EGY.USES.GDP,GDP per unit of energy use (1987 US$ per kg of oil equivalent)
+FB.DPT.INSU.PC.ZS,Deposit insurance coverage (% of GDP per capita)
+FD.AST.PRVT.GD.ZS,Domestic credit to private sector by banks (% of GDP)
+FI.RES.TOTL.CD.ZS,Total reserves includes gold (% of GDP)
+FM.AST.GOVT.CN.ZS,Claims on governments and other public entities (% of GDP)
+FM.AST.PRVT.GD.ZS,Monetary Sector credit to private sector (% GDP)
+FM.LBL.BMNY.GD.ZS,Broad money (% of GDP)
+FM.LBL.MQMY.GD.ZS,Money and quasi money (M2) as % of GDP
+FM.LBL.MQMY.GDP.ZS,Money and quasi money (M2) as % of GDP
+FM.LBL.MQMY.XD,Income velocity of money (GDP/M2)
+FM.LBL.QMNY.GDP.ZS,Quasi-liquid liabilities (% of GDP)
+FM.LBL.SEIG.GDP.ZS,Seignorage (% of GDP)
+FN.CRED.TRAD.TOTL,"Total Credit by Sector: Trade (province level, in IDR Million)"
+FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)"
+FP.FPI.TOTL.ZG,"Inflation, food prices (annual %)"
+FP.WPI.TOTL.ZG,"Inflation, wholesale prices (annual %)"
+FS.AST.CGOV.GD.ZS,"Claims on central government, etc. (% GDP)"
+FS.AST.DOMO.GD.ZS,Claims on other sectors of the domestic economy (% of GDP)
+FS.AST.DOMS.GD.ZS,Domestic credit provided by financial sector (% of GDP)
+FS.AST.DTOT.ZS,Domestic credit provided by banking sector (% of GDP)
+FS.AST.PRVT.GD.ZS,Domestic credit to private sector (% of GDP)
+FS.AST.PRVT.GDP.ZS,Credit to private sector (% of GDP)
+FS.LBL.LIQU.GD.ZS,Liquid liabilities (M3) as % of GDP
+FS.LBL.LIQU.GDP.ZS,Liquid liabilities (M3) as % of GDP
+FS.LBL.QLIQ.GD.ZS,Quasi-liquid liabilities (% of GDP)
+GB.BAL.OVRL.GD.ZS,"Overall budget balance, including grants (% of GDP)"
+GB.BAL.OVRL.GDP.ZS,"Overall budget deficit, including grants (% of GDP)"
+GB.DOD.TOTL.GD.ZS,"Central government debt, total (% of GDP)"
+GB.DOD.TOTL.GDP.ZS,"Central government debt, total (% of GDP)"
+GB.FIN.ABRD.GD.ZS,Financing from abroad (% of GDP)
+GB.FIN.ABRD.GDP.ZS,Financing from abroad (% of GDP)
+GB.FIN.DOMS.GD.ZS,"Domestic financing, total (% of GDP)"
+GB.FIN.DOMS.GDP.ZS,Domestic finanacing (% of GDP)
+GB.REV.CTOT.GD.ZS,"Current revenue, excluding grants (% of GDP)"
+GB.REV.TOTL.GDP.ZS,Current revenue (% of GDP)
+GB.REV.XAGT.CN.ZS,"Central government revenues, excluding all grants (% of GDP)"
+GB.RVC.TOTL.GD.ZS,"Current revenue, excluding grants (% of GDP)"
+GB.SOE.DECT.ZS,SOE external debt (% of GDP)
+GB.SOE.ECON.GD.ZS,"State-owned enterprises, economic activity (% of GDP)"
+GB.SOE.ECON.GDP.ZS,SOE economic activity (% of GDP)
+GB.SOE.NFLW.GD.ZS,"State-owned enterprises, net financial flows from government (% of GDP)"
+GB.SOE.NFLW.GDP.ZS,SOE net financial flows from government (% of GDP)
+GB.SOE.OVRL.GD.ZS,"State-owned enterprises, overall balance before transfers (% of GDP)"
+GB.TAX.INTT.CN,"Taxes on international trade, GB (current LCU)"
+GB.TAX.INTT.RV.ZS,Taxes on international trade (% of current revenue)
+GB.TAX.INTT.ZS,Taxes on international trade (% of current revenue)
+GB.TAX.TOTL.GD.ZS,Tax revenue (% of GDP)
+GB.TAX.TOTL.GDP.ZS,Tax revenue (% of GDP)
+GB.XPD.DEFN.GDP.ZS,Defense expenditure (% of GDP)
+GB.XPD.RSDV.GD.ZS,Research and development expenditure (% of GDP)
+GB.XPD.TOTL.GD.ZS,"Expenditure, total (% of GDP)"
+GB.XPD.TOTL.GDP.ZS,Total expenditure (% of GDP)
+GC.AST.TOTL.GD.ZS,Net acquisition of financial assets (% of GDP)
+GC.BAL.CASH.GD.ZS,Cash surplus/deficit (% of GDP)
+GC.DOD.TOTL.GD.ZS,"Central government debt, total (% of GDP)"
+GC.FIN.DOMS.GD.ZS,"Net incurrence of liabilities, domestic (% of GDP)"
+GC.FIN.FRGN.GD.ZS,"Net incurrence of liabilities, foreign (% of GDP)"
+GC.LBL.TOTL.GD.ZS,"Net incurrence of liabilities, total (% of GDP)"
+GC.NFN.TOTL.GD.ZS,Net investment in nonfinancial assets (% of GDP)
+GC.NLD.TOTL.GD.ZS,Net lending (+) / net borrowing (-) (% of GDP)
+GC.REV.XGRT.GD.ZS,"Revenue, excluding grants (% of GDP)"
+GC.TAX.INTT.CN,Taxes on international trade (current LCU)
+GC.TAX.INTT.RV.ZS,Taxes on international trade (% of revenue)
+GC.TAX.TOTL.GD.ZS,Tax revenue (% of GDP)
+GC.XPN.TOTL.GD.ZS,Expense (% of GDP)
+GFDD.AM.01,Value traded excluding top 10 traded companies to total value traded (%)
+GFDD.DI.01,Private credit by deposit money banks to GDP (%)
+GFDD.DI.02,Deposit money banks'' assets to GDP (%)
+GFDD.DI.03,Nonbank financial institutions’ assets to GDP (%)
+GFDD.DI.05,Liquid liabilities to GDP (%)
+GFDD.DI.06,Central bank assets to GDP (%)
+GFDD.DI.07,Mutual fund assets to GDP (%)
+GFDD.DI.08,Financial system deposits to GDP (%)
+GFDD.DI.09,Life insurance premium volume to GDP (%)
+GFDD.DI.10,Non-life insurance premium volume to GDP (%)
+GFDD.DI.11,Insurance company assets to GDP (%)
+GFDD.DI.12,Private credit by deposit money banks and other financial institutions to GDP (%)
+GFDD.DI.13,Pension fund assets to GDP (%)
+GFDD.DI.14,Domestic credit to private sector (% of GDP)
+GFDD.DM.01,Stock market capitalization to GDP (%)
+GFDD.DM.02,Stock market total value traded to GDP (%)
+GFDD.DM.03,Outstanding domestic private debt securities to GDP (%)
+GFDD.DM.04,Outstanding domestic public debt securities to GDP (%)
+GFDD.DM.05,Outstanding international private debt securities to GDP (%)
+GFDD.DM.06,Outstanding international public debt securities to GDP (%)
+GFDD.DM.07,International debt issues to GDP (%)
+GFDD.DM.08,Gross portfolio equity liabilities to GDP (%)
+GFDD.DM.09,Gross portfolio equity assets to GDP (%)
+GFDD.DM.10,Gross portfolio debt liabilities to GDP (%)
+GFDD.DM.11,Gross portfolio debt assets to GDP (%)
+GFDD.DM.12,Syndicated loan issuance volume to GDP (%)
+GFDD.DM.13,Corporate bond issuance volume to GDP (%)
+GFDD.DM.16,Credit flows by fintech and bigtech companies to GDP (%)
+GFDD.EI.08,Credit to government and state-owned enterprises to GDP (%)
+GFDD.OI.02,Bank deposits to GDP (%)
+GFDD.OI.08,Loans from nonresident banks (net) to GDP (%)
+GFDD.OI.09,Loans from nonresident banks (amounts outstanding) to GDP (%)
+GFDD.OI.13,Remittance inflows to GDP (%)
+GFDD.OI.14,Consolidated foreign claims of BIS reporting banks to GDP (%)
+GFDD.OI.17,Global leasing volume to GDP (%)
+GFDD.OI.18,Total factoring volume to GDP (%)
+IC.CNS.TRAD.ZS,Customs & trade regulations (% of managers surveyed ranking this as a major constraint)
+IC.FRM.CUS.ZS,Firms that trade identifying customs & trade regulations as a major constraint (% of firms)
+IC.FRM.OBS.OBST7,Percent of firms choosing customs and trade regulations as their biggest obstacle
+IC.FRM.TRD.TR9,Percent of firms identifying customs and trade regulations as a major constraint
+IE.ICT.TOTL.GD.ZS,Information and communication technology expenditure (% of GDP)
+IP.TMK.AGGD,"Trademark applications, aggregate direct"
+IP.TMK.MDRD,"Trademark applications, Madrid"
+IP.TMK.NRCT,"Trademark applications, nonresident, by count"
+IP.TMK.NRES,"Trademark applications, direct nonresident"
+IP.TMK.RESD,"Trademark applications, direct resident"
+IP.TMK.RSCT,"Trademark applications, resident, by count"
+IP.TMK.TOTL,"Trademark applications, total"
+IQ.CPA.TRAD.XQ,CPIA trade rating (1=low to 6=high)
+IS.RRS.GOOD.KM.PP.ZS,"Railways, goods transported (ton-km per PPP $ million of GDP)"
+IS.RRS.PASG.K2.PP.ZS,"Railways, passenger-km (per PPP $ million of GDP)"
+IT.TEL.REVN.GD.ZS,Telecommunications revenue (% GDP)
+JI.UEM.1524.FE.ZS,"Youth unemployment rate, aged 15-24, female (% of female youth labor force)"
+JI.UEM.1524.HE.ZS,"Youth unemployment rate, aged 15-24, above primary education (% of youth labor force with high education)"
+JI.UEM.1524.LE.ZS,"Youth unemployment rate, aged 15-24, primary education and below (% of youth labor force with low education)"
+JI.UEM.1524.MA.ZS,"Youth unemployment rate, aged 15-24, male (% of male youth labor force)"
+JI.UEM.1524.RU.ZS,"Youth unemployment rate, aged 15-24, rural (% of rural youth labor force)"
+JI.UEM.1524.UR.ZS,"Youth unemployment rate, aged 15-24, urban (% of urban youth labor force)"
+JI.UEM.1524.ZS,"Youth unemployment rate, aged 15-24, total (% of total youth labor force)"
+JI.UEM.1564.FE.ZS,"Unemployment rate, aged 15-64, female (% of female labor force in working age)"
+JI.UEM.1564.HE.ZS,"Unemployment rate, aged 15-64, above primary education (% of labor force with high education in working age)"
+JI.UEM.1564.LE.ZS,"Unemployment rate, aged 15-64, primary education and below (% of labor force with low education in working age)"
+JI.UEM.1564.MA.ZS,"Unemployment rate, aged 15-64, male (% of male labor force in working age)"
+JI.UEM.1564.OL.ZS,"Unemployment rate, aged 25-64 (% of labor force aged 25-64)"
+JI.UEM.1564.RU.ZS,"Unemployment rate, aged 15-64, rural (% of rural labor force in working age)"
+JI.UEM.1564.UR.ZS,"Unemployment rate, aged 15-64, urban (% of urban labor force in working age)"
+JI.UEM.1564.YG.ZS,"Unemployment rate, aged 15-24 (% of labor force aged 15-24)"
+JI.UEM.1564.ZS,"Unemployment rate, aged 15-64, total (% of total labor force in working age)"
+lm_ub.bi_q1,Benefit incidence of unemployment benefits and ALMP to poorest quintile (% of total U/ALMP benefits)
+lm_ub.cov_pop,Coverage of unemployment benefits and ALMP (% of population)
+lm_ub.gen_pop,Generosity of unemployment benefits and ALMP (% of total welfare of beneficiary households)
+LP.LPI.INFR.RK,"Quality- of trade and transport-related infrastructure, rank (1=highest performer)"
+LP.LPI.INFR.XQ,Logistics performance index: Quality of trade and transport-related infrastructure (1=low to 5=high)
+MS.MIL.XPND.GD.ZS,Military expenditure (% of GDP)
+NA.GDP.ACC.FB.SNA08.CR,"GDP on Accommodation & Food Beverages Activity Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.ACC.FB.SNA08.KR,"GDP on Accommodation & Food Beverages Activity Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.AGR.CR,"GDP on Agriculture Sector (in IDR Million), Current Price"
+NA.GDP.AGR.KR,"GDP on Agriculture Sector (in IDR Million), Constant Price"
+NA.GDP.AGR.SNA08.CR,"GDP on Agriculture, Forestry & Fisheries Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.AGR.SNA08.KR,"GDP on Agriculture, Forestry & Fisheries Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.BUSS.SNA08.CR,"GDP on Business Services Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.BUSS.SNA08.KR,"GDP on Business Services Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.CNST.CR,"GDP on Construction Sector (in IDR Million), Current Price"
+NA.GDP.CNST.KR,"GDP on Construction Sector (in IDR Million), Constant Price"
+NA.GDP.CNST.SNA08.CR,"GDP on Construction Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.CNST.SNA08.KR,"GDP on Construction Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.EDUS.SNA08.CR,"GDP on Education Services Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.EDUS.SNA08.KR,"GDP on Education Services Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.ELEC.GAS.SNA08.CR,"GDP on Electricity & Gas Supply Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.ELEC.GAS.SNA08.KR,"GDP on Electricity & Gas Supply Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.EXC.OG.CR,"Total GDP excluding Oil and Gas (in IDR Million), Current Price"
+NA.GDP.EXC.OG.KR,"Total GDP excluding Oil and Gas (in IDR Million), Constant Price"
+NA.GDP.FINS.CR,"GDP on Financial Service Sector (in IDR Million), Current Price"
+NA.GDP.FINS.KR,"GDP on Financial Service Sector (in IDR Million), Constant Price"
+NA.GDP.FINS.SNA08.CR,"GDP on Financial & Insurance Activity Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.FINS.SNA08.KR,"GDP on Financial & Insurance Activity Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.HLTH.SOCW.SNA08.CR,"GDP on Human Health & Social Work Activity Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.HLTH.SOCW.SNA08.KR,"GDP on Human Health & Social Work Activity Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.INC.OG.CR,"Total GDP including Oil and Gas (in IDR Million), Current Price"
+NA.GDP.INC.OG.KR,"Total GDP including Oil and Gas (in IDR Million), Constant Price"
+NA.GDP.INC.OG.SNA08.CR,"Total GDP including Oil and Gas (in IDR Million), SNA 2008, Current Price"
+NA.GDP.INC.OG.SNA08.KR,"Total GDP including Oil and Gas (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.INF.COMM.SNA08.CR,"GDP on Information & Communication Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.INF.COMM.SNA08.KR,"GDP on Information & Communication Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.MINQ.CR,"GDP on Mining and Quarrying Sector (in IDR Million), Current Price"
+NA.GDP.MINQ.KR,"GDP on Mining and Quarrying Sector (in IDR Million), Constant Price"
+NA.GDP.MINQ.SNA08.CR,"GDP on Mining & Quarrying Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.MINQ.SNA08.KR,"GDP on Mining & Quarrying Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.MNF.CR,"GDP on Manufacturing Sector (in IDR Million), Current Price"
+NA.GDP.MNF.KR,"GDP on Manufacturing Sector (in IDR Million), Constant Price"
+NA.GDP.MNF.SNA08.CR,"GDP on Manufacturing Industry Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.MNF.SNA08.KR,"GDP on Manufacturing Industry Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.PADM.DEF.SNA08.CR,"GDP on Public Administration, Defense & Compulsory Social Security Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.PADM.DEF.SNA08.KR,"GDP on Public Administration, Defense & Compulsory Social Security Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.REST.SNA08.CR,"GDP on Real Estate Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.REST.SNA08.KR,"GDP on Real Estate Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.SRV.OTHR.CR,"GDP on Other Service Sector (in IDR Million), Current Price"
+NA.GDP.SRV.OTHR.KR,"GDP on Other Service Sector (in IDR Million), Constant Price"
+NA.GDP.SRV.OTHR.SNA08.CR,"GDP on Other Services Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.SRV.OTHR.SNA08.KR,"GDP on Other Services Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.TRAN.COMM.CR,"GDP on Transportation and Telecommunication Sector (in IDR Million), Current Price"
+NA.GDP.TRAN.COMM.KR,"GDP on Transportation and Telecommunication Sector (in IDR Million), Constant Price"
+NA.GDP.TRAN.STOR.SNA08.CR,"GDP on Transportation & Storage Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.TRAN.STOR.SNA08.KR,"GDP on Transportation & Storage Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.TRD.HTL.CR,"GDP on Trade, Hotel and Restaurant Sector (in IDR Million), Current Price"
+NA.GDP.TRD.HTL.KR,"GDP on Trade, Hotel and Restaurant Sector (in IDR Million), Constant Price"
+NA.GDP.TRD.SNA08.CR,"GDP on Wholesales & Retail Trade, Repair of Motor Vehicles & Motorcycles Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.TRD.SNA08.KR,"GDP on Wholesales & Retail Trade, Repair of Motor Vehicles & Motorcycles Sector (in IDR Million), SNA 2008, Constant Price"
+NA.GDP.UTL.CR,"GDP on Utilities Sector (in IDR Million), Current Price"
+NA.GDP.UTL.KR,"GDP on Utilities Sector (in IDR Million), Constant Price"
+NA.GDP.WTR.WST.SNA08.CR,"GDP on Water Supply, Sewerage, Waste & Recycling Management Sector (in IDR Million), SNA 2008, Current Price"
+NA.GDP.WTR.WST.SNA08.KR,"GDP on Water Supply, Sewerage, Waste & Recycling Management Sector (in IDR Million), SNA 2008, Constant Price"
+NE.CON.GOVT.ZS,General government final consumption expenditure (% of GDP)
+NE.CON.PETC.ZS,"Household final consumption expenditure, etc. (% of GDP)"
+NE.CON.PRVT.ZS,Households and NPISHs final consumption expenditure (% of GDP)
+NE.CON.TETC.ZS,"Final consumption expenditure, etc. (% of GDP)"
+NE.CON.TOTL.ZG,Total consumption: contribution to growth of GDP (%)
+NE.CON.TOTL.ZS,Final consumption expenditure (% of GDP)
+NE.DAB.TOTL.ZS,Gross national expenditure (% of GDP)
+NE.EXP.GNFS.ZS,Exports of goods and services (% of GDP)
+NE.EXP.TTEF.KN,KP Terms of Trade Adjustment (Local)
+NE.GDI.CON.GOVT.CR,GDP expenditure on general government consumption (in IDR Million)
+NE.GDI.CON.GOVT.SNA08.CR,"GDP expenditure on general government consumption (in IDR Million), SNA 2008, Current Price"
+NE.GDI.CON.NPI.CR,GDP expenditure on non profit private institution consumption (in IDR Million)
+NE.GDI.CON.NPI.SNA08.CR,"GDP expenditure on non profit private institution consumption (in IDR Million), SNA 2008, Current Price"
+NE.GDI.CON.PRVT.CR,GDP expenditure on private consumption (in IDR Million)
+NE.GDI.CON.PRVT.SNA08.CR,"GDP expenditure on private consumption (in IDR Million), SNA 2008, Current Price"
+NE.GDI.EXPT.CR,GDP expenditure on exports (in IDR Million)
+NE.GDI.EXPT.SNA08.CR,"GDP expenditure on exports (in IDR Million), SNA 2008, Current Price"
+NE.GDI.FPRV.ZS,"Gross fixed capital formation, private sector (% of GDP)"
+NE.GDI.FPUB.ZS,Gross public investment (% of GDP)
+NE.GDI.FTOT.CR,GDP expenditure on gross fixed capital formation (in IDR Million)
+NE.GDI.FTOT.SNA08.CR,"GDP expenditure on gross fixed capital formation (in IDR Million), SNA 2008, Current Price"
+NE.GDI.FTOT.ZS,Gross fixed capital formation (% of GDP)
+NE.GDI.IMPT.CR,GDP expenditure on imports (in IDR Million)
+NE.GDI.IMPT.SNA08.CR,"GDP expenditure on imports (in IDR Million), SNA 2008, Current Price"
+NE.GDI.INEX.SNA08.CR,"GDP expenditure on inter-region net exports (in IDR Million), SNA 2008, Current Price"
+NE.GDI.STKB.CR,GDP expenditure on changes in stock (in IDR Million)
+NE.GDI.STKB.SNA08.CR,"GDP expenditure on changes in stock (in IDR Million), SNA 2008, Current Price"
+NE.GDI.TOTL.CR,Total GDP based on expenditure (in IDR Million)
+NE.GDI.TOTL.SNA08.CR,"Total GDP based on expenditure (in IDR Million), SNA 2008, Current Price"
+NE.GDI.TOTL.ZG,Gross domestic investment: contr. to growth of GDP(%)
+NE.GDI.TOTL.ZS,Gross capital formation (% of GDP)
+NE.IMP.GNFS.ZS,Imports of goods and services (% of GDP)
+NE.MRCH.GDP.ZS,Merchandise trade to GDP ratio (%)
+NE.RSB.GNFS.ZG,Resource balance: contribution to growth of GDP (%)
+NE.RSB.GNFS.ZS,External balance on goods and services (% of GDP)
+NE.TRD.GNFS.CD,Trade of goods and services (current US$)
+NE.TRD.GNFS.ZS,Trade (% of GDP)
+NE.TRM.TRAD.XN,Terms of trade index (2000=100)
+NE.TRM.TRAD.XU,"Terms of trade (goods and services, 2000 = 100)"
+NP.AGR.TOTL.ZG,Agriculture: contribution to growth of GDP (%)
+NP.IND.TOTL.ZG,Industry: contribution to growth of GDP (%)
+NP.SRV.TOTL.ZG,Services: contribution to growth of GDP (%)
+NV.AGR.PCAP.KD.ZG,Real agricultural GDP per capita growth rate (%)
+NV.AGR.TOTL.ZG,Real agricultural GDP growth rates (%)
+NV.AGR.TOTL.ZS,"Agriculture, forestry, and fishing, value added (% of GDP)"
+NV.IND.MANF.ZS,"Manufacturing, value added (% of GDP)"
+NV.IND.TOTL.ZG,Industry: contribution to growth of GDP (%)
+NV.IND.TOTL.ZS,"Industry (including construction), value added (% of GDP)"
+NV.SRV.DISC.CD,"Discrepancy in GDP, value added (current US$)"
+NV.SRV.DISC.CN,"Discrepancy in GDP, value added (current LCU)"
+NV.SRV.DISC.KN,"Discrepancy in GDP, value added (constant LCU)"
+NV.SRV.TETC.ZG,Services: contribution to growth of GDP (%)
+NV.SRV.TETC.ZS,"Services, etc., value added (% of GDP)"
+NV.SRV.TOTL.ZS,"Services, value added (% of GDP)"
+NV.SRV.TRAD.CD,"Wholesale and retail trade, value added (current US$)"
+NV.SRV.TRAD.CN,"Wholesale and retail trade, value added (current LCU)"
+NV.SRV.TRAD.KN,"Wholesale and retail trade, value added (constant LCU)"
+NY.AGR.SUBS.GD.ZS,Agricultural support estimate (% of GDP)
+NY.GDP.COAL.RT.ZS,Coal rents (% of GDP)
+NY.GDP.DEFL.87.ZG,"Inflation, GDP deflator (annual %)"
+NY.GDP.DEFL.KD.ZG,"Inflation, GDP deflator (annual %)"
+NY.GDP.DEFL.KD.ZG.AD,"Inflation, GDP deflator: linked series (annual %)"
+NY.GDP.DEFL.ZS,GDP deflator (base year varies by country)
+NY.GDP.DEFL.ZS.87,GDP deflator (1987 = 100)
+NY.GDP.DEFL.ZS.AD,GDP deflator: linked series (base year varies by country)
+NY.GDP.DISC.CD,Discrepancy in expenditure estimate of GDP (current US$)
+NY.GDP.DISC.CN,Discrepancy in expenditure estimate of GDP (current LCU)
+NY.GDP.DISC.KN,Discrepancy in expenditure estimate of GDP (constant LCU)
+NY.GDP.FCST.KD.87,GDP at factor cost (constant 1987 US$)
+NY.GDP.FCST.KN.87,GDP at factor cost (constant 1987 LCU)
+NY.GDP.FRST.RT.ZS,Forest rents (% of GDP)
+NY.GDP.MINR.RT.ZS,Mineral rents (% of GDP)
+NY.GDP.MKTP.CD,GDP (current US$)
+NY.GDP.MKTP.CD.XD,"GDP deflator, index (2000=100; US$ series)"
+NY.GDP.MKTP.CN,GDP (current LCU)
+NY.GDP.MKTP.CN.AD,GDP: linked series (current LCU)
+NY.GDP.MKTP.CN.XD,"GDP deflator, period average (LCU index 2000=100)"
+NY.GDP.MKTP.IN,GDP Deflator
+NY.GDP.MKTP.KD,GDP (constant 2015 US$)
+NY.GDP.MKTP.KD.87,GDP at market prices (constant 1987 US$)
+NY.GDP.MKTP.KD.ZG,GDP growth (annual %)
+NY.GDP.MKTP.KN,GDP (constant LCU)
+NY.GDP.MKTP.KN.87,GDP at market prices (constant 1987 LCU)
+NY.GDP.MKTP.KN.87.ZG,GDP growth (annual %)
+NY.GDP.MKTP.PP.CD,"GDP, PPP (current international $)"
+NY.GDP.MKTP.PP.KD,"GDP, PPP (constant 2021 international $)"
+NY.GDP.MKTP.PP.KD.87,"GDP, PPP (constant 1987 international $)"
+NY.GDP.MKTP.XD,"GDP deflator (1987=100,Index)"
+NY.GDP.MKTP.XU.E,"GDP deflator, end period (base year varies by country)"
+NY.GDP.NGAS.RT.ZS,Natural gas rents (% of GDP)
+NY.GDP.PCAP.CD,GDP per capita (current US$)
+NY.GDP.PCAP.CN,GDP per capita (current LCU)
+NY.GDP.PCAP.KD,GDP per capita (constant 2015 US$)
+NY.GDP.PCAP.KD.ZG,GDP per capita growth (annual %)
+NY.GDP.PCAP.KN,GDP per capita (constant LCU)
+NY.GDP.PCAP.PP.CD,"GDP per capita, PPP (current international $)"
+NY.GDP.PCAP.PP.KD,"GDP per capita, PPP (constant 2021 international $)"
+NY.GDP.PCAP.PP.KD.87,"GDP per capita, PPP (constant 1987 international $)"
+NY.GDP.PCAP.PP.KD.ZG,"GDP per capita, PPP annual growth (%)"
+NY.GDP.PETR.RT.ZS,Oil rents (% of GDP)
+NY.GDP.TOTL.RT.ZS,Total natural resources rents (% of GDP)
+NY.GDS.TOTL.ZS,Gross domestic savings (% of GDP)
+NY.GEN.AEDU.GD.ZS,Genuine savings: education expenditure (% of GDP)
+NY.GEN.DCO2.GD.ZS,Genuine savings: carbon dioxide damage (% of GDP)
+NY.GEN.DFOR.GD.ZS,Genuine savings: net forest depletion (% of GDP)
+NY.GEN.DKAP.GD.ZS,Genuine savings: consumption of fixed capital (% of GDP)
+NY.GEN.DMIN.GD.ZS,Genuine savings: mineral depletion (% of GDP)
+NY.GEN.DNGY.GD.ZS,Genuine savings: energy depletion (% of GDP)
+NY.GEN.NDOM.GD.ZS,Genuine savings: net domestic savings (% of GDP)
+NY.GEN.SVNG.GD.ZS,Genuine domestic savings (% of GDP)
+NY.GNS.ICTR.ZS,Gross savings (% of GDP)
+NY.TTF.GNFS.KD.87,Terms of trade adjustment (constant 1987 US$)
+NY.TTF.GNFS.KN,Terms of trade adjustment (constant LCU)
+NY.TTF.GNFS.KN.87,Terms of trade adjustment (constant 1987 LCU)
+NY.TTF.MRCH.KN,Terms of Trade Adjustment (local) (Const. Price)
+NYGDPMKTPKDZ,"GDP growth, constant (average 2010-19 prices and exchange rates)"
+NYGDPMKTPSACD,"GDP,current US$,millions,seas. adj.,"
+NYGDPMKTPSACN,"GDP,current LCU,millions,seas. adj.,"
+NYGDPMKTPSAKD,"GDP,constant 2010 US$,millions,seas. adj.,"
+NYGDPMKTPSAKN,"GDP,constant 2010 LCU,millions,seas. adj.,"
+PA.NUS.PPP,"PPP conversion factor, GDP (LCU per international $)"
+PA.NUS.PPP.05,"2005 PPP conversion factor, GDP (LCU per international $)"
+PA.NUS.PPPC.RF,Price level ratio of PPP conversion factor (GDP) to market exchange rate
+PER.ALL.CNTRL.GDP,World Bank: Share of GDP for central government expenditures on education (%)
+PER.ALL.CPL.GDP,World Bank: Public capital expenditure on education as % of GDP
+PER.ALL.PS.GDP,World Bank: Public education expenditure per student (% of GDP per capita)
+PER.ALL.RCT.GDP,World Bank: Public recurrent expenditure on education (% of GDP)
+PER.ALL.SAL.GDP,World Bank: Education salary expenditures as a % of GDP
+PER.ALL.SUB.GDP,World Bank: Share of GDP for subnational government expenditures on education (%)
+PER.ALL.TSAL.GDP,World Bank: Ratio of Teacher Salaries to per capita GDP
+PER.ALL.TTL.GDP,World Bank: Total education expenditure as % of GDP
+PER.ALL.TTL.GDP.GOV,World Bank: Total public education expenditure as % of GDP
+PER.BAS.GDP,World Bank: Share of GDP for education expenditures on basic education (%)
+PER.BAS.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), basic"
+PER.BAS.SAL.GDP,"World Bank: Ratio of Teacher Salaries to per capita GDP, basic education"
+PER.EFF.GDP,World Bank: Share of GDP lost through inefficiencies (%)
+PER.EFF.SUB.GDP,World Bank: Share of GDP potentially saved with improved targeting of education subsidies (%)
+PER.EFF.TEACH.GDP,World Bank: Share of GDP potentially saved with improved pupil/teacher ratios (%)
+PER.JR.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), junior secondary"
+PER.JR.SAL.GDP,"World Bank: Ratio of Teacher Salaries to per capita GDP, junior secondary"
+PER.OC.FEED.GDP,World Bank: School Feeding Programs (% of GDP)
+PER.OC.TRA.GDP,World Bank: Central Government Transfers for education (% of GDP)
+PER.PP.GDP,World Bank: Share of GDP for education expenditures on pre-primary education (%)
+PER.PP.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), pre-primary"
+PER.PRM.GDP,World Bank: Share of GDP for education expenditures on primary education (%)
+PER.PRM.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), primary"
+PER.PRM.RCT.GDP,World Bank: Primary recurrent expenditures as a share of GDP (%)
+PER.PRM.SAL.GDP,"World Bank: Ratio of Teacher Salaries to per capita GDP, primary"
+PER.SEC.GDP,World Bank: Share of GDP for education expenditures on secondary education (%)
+PER.SEC.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), secondary"
+PER.SEC.RCT.GDP,World Bank: Secondary recurrent expenditures as a share of GDP (%)
+PER.SEC.SAL.GDP,"World Bank: Ratio of Teacher Salaries to per capita GDP, secondary"
+PER.SOR.GOV.GDP,World Bank: Total education expenditure from public sources (% of GDP)
+PER.SOR.ITL.GDP,World Bank: Total education expenditures from international sources as a % of GDP
+PER.SOR.PVT.GDP,World Bank: Total private expenditure on education (% of GDP)
+PER.SOR.PVT.GDP.PP,World Bank: Total private expenditure on pre-primary education (% of GDP)
+PER.SOR.PVT.GDP.PRM,World Bank: Total private expenditure on primary education (% of GDP)
+PER.SOR.PVT.GDP.SEC,World Bank: Total private expenditure on secondary education (% of GDP)
+PER.SOR.PVT.GDP.TER,World Bank: Total private expenditure on tertiary education (% of GDP)
+PER.SR.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), senior secondary"
+PER.SR.SAL.GDP,"World Bank: Ratio of Teacher Salaries to per capita GDP, senior secondary"
+PER.TER.GDP,World Bank: Share of GDP for education expenditures on tertiary education (%)
+PER.TER.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), tertiary"
+PER.TER.RCT.GDP,World Bank: Tertiary recurrent expenditures as a share of GDP (%)
+PER.TER.SAL.GDP,"World Bank: Ratio of Teacher Salaries to per capita GDP, tertiary"
+PER.TT.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), teacher training"
+PER.VOC.GDP,World Bank: Share of GDP for education expenditures on technical/vocational education (%)
+PER.VOC.PS.GDP,"World Bank: Public education expenditure per student (% of GDP per capita), technical/vocational education"
+per_lm_alllm.adq_pop_tot,Adequacy of unemployment benefits and ALMP (% of total welfare of beneficiary households)
+per_lm_alllm.ben_q1_tot,Benefit incidence of unemployment benefits and ALMP to poorest quintile (% of total U/ALMP benefits)
+per_lm_alllm.cov_pop_tot,Coverage of unemployment benefits and ALMP (% of population)
+per_lm_alllm.cov_q1_tot,Coverage of unemployment benefits and ALMP in poorest quintile (% of population)
+per_lm_alllm.cov_q2_tot,Coverage of unemployment benefits and ALMP in 2nd quintile (% of population)
+per_lm_alllm.cov_q3_tot,Coverage of unemployment benefits and ALMP in 3rd quintile (% of population)
+per_lm_alllm.cov_q4_tot,Coverage of unemployment benefits and ALMP in 4th quintile (% of population)
+per_lm_alllm.cov_q5_tot,Coverage of unemployment benefits and ALMP in richest quintile (% of population)
+SE.PRM.BFIN.6,(Financing) - Does the country spend 4-5%  of GDP or 15-20% of public expenditures on education spending?
+SE.XPD.EDUC.ZS,Public Expenditure on Education  (% GDP)
+SE.XPD.PRIM.GDP.ZS,"Public spending on education, primary (% of GDP)"
+SE.XPD.PRIM.PC.ZS,"Government expenditure per student, primary (% of GDP per capita)"
+SE.XPD.SECO.GDP.ZS,"Public spending on education, secondary (% of GDP)"
+SE.XPD.SECO.PC.ZS,"Government expenditure per student, secondary (% of GDP per capita)"
+SE.XPD.TERT.GDP.ZS,"Public spending on education, tertiary (% of GDP)"
+SE.XPD.TERT.PC.ZS,"Government expenditure per student, tertiary (% of GDP per capita)"
+SE.XPD.TOTL.GD.ZS,"Government expenditure on education, total (% of GDP)"
+SF.TRN.RAIL.KM.ZS,Rail traffic (km per million US$ GDP)
+SH.XPD.CHEX.GD.ZS,Current health expenditure (% of GDP)
+SH.XPD.GHED.GD.ZS,Domestic general government health expenditure (% of GDP)
+SH.XPD.HLTH.ZS,Public Expenditure on Health (% GDP)
+SH.XPD.KHEX.GD.ZS,Capital health expenditure (% of GDP)
+SH.XPD.PRIV.ZS,"Health expenditure, private (% of GDP)"
+SH.XPD.PUBL.ZS,"Health expenditure, public (% of GDP)"
+SH.XPD.TOTL.ZS,"Health expenditure, total (% of GDP)"
+SL.EMP.TRAD,"Number of people employed in trade, hotel and restaurant sector"
+SL.GDP.PCAP.EM.KD,GDP per person employed (constant 2021 PPP $)
+SL.GDP.PCAP.EM.KD.ZG,GDP per person employed (annual % growth)
+SL.GDP.PCAP.EM.XD,"GDP per person employed, index (1980 = 100)"
+SL.UEM.1524.FE.NE.ZS,"Unemployment, youth female (% of female labor force ages 15-24) (national estimate)"
+SL.UEM.1524.FE.ZS,"Unemployment, youth female (% of female labor force ages 15-24) (modeled ILO estimate)"
+SL.UEM.1524.FM.NE.ZS,Ratio of female to male youth unemployment rate (%) (national estimate)
+SL.UEM.1524.FM.ZS,Ratio of female to male youth unemployment rate (% ages 15-24) (modeled ILO estimate)
+SL.UEM.1524.MA.NE.ZS,"Unemployment, youth male (% of male labor force ages 15-24) (national estimate)"
+SL.UEM.1524.MA.ZS,"Unemployment, youth male (% of male labor force ages 15-24) (modeled ILO estimate)"
+SL.UEM.1524.NE.ZS,"Unemployment, youth total (% of total labor force ages 15-24) (national estimate)"
+SL.UEM.1524.ZS,"Unemployment, youth total (% of total labor force ages 15-24) (modeled ILO estimate)"
+SL.UEM.ADVN.FE.ZS,"Unemployment with advanced education, female (% of female labor force with advanced education)"
+SL.UEM.ADVN.MA.ZS,"Unemployment with advanced education, male (% of male labor force with advanced education)"
+SL.UEM.ADVN.ZS,Unemployment with advanced education (% of total labor force with advanced education)
+SL.UEM.BASC.FE.ZS,"Unemployment with basic education, female (% of female labor force with basic education)"
+SL.UEM.BASC.MA.ZS,"Unemployment with basic education, male (% of male labor force with basic education)"
+SL.UEM.BASC.ZS,Unemployment with basic education (% of total labor force with basic education)
+SL.UEM.INTM.FE.ZS,"Unemployment with intermediate education, female (% of female labor force with intermediate education)"
+SL.UEM.INTM.MA.ZS,"Unemployment with intermediate education, male (% of male labor force with intermediate education)"
+SL.UEM.INTM.ZS,Unemployment with intermediate education (% of total labor force with intermediate education)
+SL.UEM.LTRM.FE.ZS,"Long-term unemployment, female (% of female unemployment)"
+SL.UEM.LTRM.MA.ZS,"Long-term unemployment, male (% of male unemployment)"
+SL.UEM.LTRM.ZS,Long-term unemployment (% of total unemployment)
+SL.UEM.PRIM.FE.ZS,"Unemployment with primary education, female (% of female unemployment)"
+SL.UEM.PRIM.MA.ZS,"Unemployment with primary education, male (% of male unemployment)"
+SL.UEM.PRIM.ZS,Unemployment with primary education (% of total unemployment)
+SL.UEM.SECO.FE.ZS,"Unemployment with secondary education, female (% of female unemployment)"
+SL.UEM.SECO.MA.ZS,"Unemployment with secondary education, male (% of male unemployment)"
+SL.UEM.SECO.ZS,Unemployment with secondary education (% of total unemployment)
+SL.UEM.TERT.FE.ZS,"Unemployment with tertiary education, female (% of female unemployment)"
+SL.UEM.TERT.MA.ZS,"Unemployment with tertiary education, male (% of male unemployment)"
+SL.UEM.TERT.ZS,Unemployment with tertiary education (% of total unemployment)
+SL.UEM.TOTL.FE.NE.ZS,"Unemployment, female (% of female labor force) (national estimate)"
+SL.UEM.TOTL.FE.ZS,"Unemployment, female (% of female labor force) (modeled ILO estimate)"
+SL.UEM.TOTL.MA.NE.ZS,"Unemployment, male (% of male labor force) (national estimate)"
+SL.UEM.TOTL.MA.ZS,"Unemployment, male (% of male labor force) (modeled ILO estimate)"
+SL.UEM.TOTL.NE.ZS,"Unemployment, total (% of total labor force) (national estimate)"
+SL.UEM.TOTL.ZS,"Unemployment, total (% of total labor force) (modeled ILO estimate)"
+TG.VAL.TOTL.GD.PP.ZS,"Trade (% of GDP, PPP)"
+TG.VAL.TOTL.GD.ZS,Merchandise trade (% of GDP)
+TG.VAL.TOTL.GG.ZS,Trade in goods (% of goods GDP)
+TM.GATS.XD,"General Agreement on Trade in Services (GATS) Commitments Index, all service sectors (0 least liberal to 100 most liberal)"
+TN.PRI.MRCH.ID,"Terms of Trade Index (1980=100, US$-based)"
+TOT,Terms of Trade
+TT.INC.MRCH.XD.UN,Income terms of trade (1987 = 100)
+TT.PRI.MRCH.XD,"Terms of Trade Index (1987=100,US$-based)"
+TT.PRI.MRCH.XD.UN,Net barter terms of trade (1987 = 100)
+TT.PRI.MRCH.XD.WB,Merchandise Terms of Trade (1987 = 100)
+TT.PRI.MRCH.XD.WD,Net barter terms of trade index (2015 = 100)
+UNEMPSA_,"Unemployment rate,Percent,,,"

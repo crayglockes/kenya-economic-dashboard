@@ -1,0 +1,190 @@
+---
+title: "Kenya Economic Dashboard (2000-2023)"
+author: "[Mocraig Kisali Sande]"
+date: "`r Sys.Date()`"
+output: 
+  html_document:
+    theme: flatly
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(plotly)
+library(DT)
+library(scales)
+
+# Load data
+kenya_data <- read_csv("../data/processed/kenya_economic_clean.csv")
+```
+
+## Executive Summary
+
+This dashboard analyzes **23 years of Kenya's economic data (2000-2023)** from the World Bank, revealing a story of steady growth, trade challenges, and evolving macroeconomic stability.
+
+**Key Findings:**
+- GDP grew 8-fold from $14B to $113B
+- Persistent trade deficit averaging -12% of GDP
+- Inflation stabilized post-2012 after volatile period
+- Rising debt-to-GDP ratio raises sustainability concerns
+
+---
+
+## 1. GDP Growth Trajectory
+
+```{r gdp-growth}
+p1 <- ggplot(kenya_data, aes(x = year, y = gdp_current_usd / 1e9)) +
+  geom_line(color = "#006600", size = 1.5) +
+  geom_point(color = "#006600", size = 2) +
+  scale_y_continuous(labels = scales::dollar_format(suffix = "B")) +
+  labs(
+    title = "Kenya GDP (Current USD)",
+    x = "Year",
+    y = "GDP (Billions USD)",
+    caption = "Source: World Bank WDI"
+  ) +
+  theme_minimal()
+
+ggplotly(p1)
+```
+
+**Insight**: Kenya's economy expanded consistently, with only a brief contraction in 2020 (COVID-19).
+
+---
+
+## 2. GDP Growth Rate
+
+```{r growth-rate}
+p2 <- ggplot(kenya_data, aes(x = year, y = gdp_growth_annual)) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "red") +
+  geom_line(color = "#0066CC", size = 1.2) +
+  geom_point(aes(color = gdp_growth_annual > 0), size = 2.5) +
+  scale_color_manual(values = c("TRUE" = "#006600", "FALSE" = "#CC0000")) +
+  labs(
+    title = "Annual GDP Growth Rate",
+    x = "Year",
+    y = "Growth (%)",
+    caption = "Source: World Bank WDI"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+ggplotly(p2)
+```
+
+**Average annual growth**: `r round(mean(kenya_data$gdp_growth_annual, na.rm = TRUE), 2)`%
+
+---
+
+## 3. Inflation Dynamics
+
+```{r inflation}
+p3 <- ggplot(kenya_data, aes(x = year)) +
+  geom_line(aes(y = inflation_cpi), color = "gray50", size = 0.8) +
+  geom_line(aes(y = inflation_ma3), color = "#FF6600", size = 1.5) +
+  labs(
+    title = "Inflation Rate (CPI)",
+    subtitle = "Gray = Annual, Orange = 3-year moving average",
+    x = "Year",
+    y = "Inflation (%)"
+  ) +
+  theme_minimal()
+
+ggplotly(p3)
+```
+
+**Insight**: High volatility (2008-2011) gave way to stability post-2015, reflecting improved monetary policy.
+
+---
+
+## 4. Trade Balance
+
+```{r trade}
+p4 <- ggplot(kenya_data, aes(x = year, y = trade_balance_pct_gdp)) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_area(aes(fill = trade_balance_pct_gdp > 0), alpha = 0.3) +
+  geom_line(size = 1) +
+  scale_fill_manual(values = c("TRUE" = "#006600", "FALSE" = "#CC0000")) +
+  labs(
+    title = "Trade Balance (% of GDP)",
+    x = "Year",
+    y = "Balance (%)"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+ggplotly(p4)
+```
+
+**Persistent deficit**: Kenya has imported more than exported every year since 2000.
+
+---
+
+## 5. Debt Sustainability
+
+```{r debt}
+p5 <- ggplot(kenya_data, aes(x = year, y = debt_to_gdp_ratio)) +
+  geom_line(size = 1.2, color = "#CC0000") +
+  geom_point(size = 2, color = "#CC0000") +
+  geom_hline(yintercept = 60, linetype = "dashed", color = "gray50") +
+  labs(
+    title = "External Debt-to-GDP Ratio",
+    subtitle = "Dashed line = 60% sustainability threshold",
+    x = "Year",
+    y = "Debt-to-GDP (%)"
+  ) +
+  theme_minimal()
+
+ggplotly(p5)
+```
+
+**Concern**: Debt-to-GDP crossed 60% threshold in 2018, requiring fiscal discipline.
+
+---
+
+## 6. Data Table
+
+```{r data-table}
+kenya_data %>%
+  select(
+    Year = year,
+    `GDP (USD)` = gdp_current_usd,
+    `GDP Growth (%)` = gdp_growth_annual,
+    `Inflation (%)` = inflation_cpi,
+    `Trade Balance (% GDP)` = trade_balance_pct_gdp,
+    `Debt-to-GDP (%)` = debt_to_gdp_ratio
+  ) %>%
+  mutate(`GDP (USD)` = scales::dollar(`GDP (USD)`)) %>%
+  datatable(
+    options = list(pageLength = 10, scrollX = TRUE),
+    caption = "Kenya Economic Indicators (2000-2023)"
+  )
+```
+
+---
+
+## Methodology
+
+**Data Source**: World Bank World Development Indicators (WDI API)
+
+**Indicators**: 10 core economic metrics including GDP, inflation, unemployment, trade, and debt.
+
+**Processing**: Data cleaned for missing values, derived variables created (trade balance, debt ratios, moving averages).
+
+**Tools**: R (tidyverse, plotly, DT), RMarkdown
+
+**Repository**: [https://github.com/crayglockes/kenya-economic-dashboard]
+
+---
+
+## Contact
+
+**Author**: [Mocraig Kisali Sande]  
+**Email**: mocraigks@gmail.com  
+**LinkedIn**: [linkedin.com/in/mocraigks]  
+**GitHub**: [github.com/crayglockes]
+
+*Built as part of a 14-day portfolio sprint demonstrating econometric analysis and data visualization skills.*

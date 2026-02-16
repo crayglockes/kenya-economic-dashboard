@@ -1,0 +1,21 @@
+      year      gdp_current_usd     gdp_growth_annual
+ Min.   :2000   Min.   :1.271e+10   Min.   :-0.2728  
+ 1st Qu.:2006   1st Qu.:2.405e+10   1st Qu.: 3.6617  
+ Median :2012   Median :5.163e+10   Median : 4.9139  
+ Mean   :2012   Mean   :5.646e+10   Mean   : 4.3324  
+ 3rd Qu.:2017   3rd Qu.:8.458e+10   3rd Qu.: 5.6660  
+ Max.   :2023   Max.   :1.144e+11   Max.   : 8.0585  
+ inflation_cpi    unemployment_rate trade_balance_pct_gdp
+ Min.   : 1.961   Min.   :2.642     Min.   :-15.303      
+ 1st Qu.: 5.733   1st Qu.:2.756     1st Qu.:-10.240      
+ Median : 7.666   Median :2.830     Median : -9.299      
+ Mean   : 8.614   Mean   :3.431     Mean   : -9.452      
+ 3rd Qu.: 9.857   3rd Qu.:3.728     3rd Qu.: -8.150      
+ Max.   :26.240   Max.   :5.693     Max.   : -5.377      
+ debt_to_gdp_ratio
+ Min.   :19.57    
+ 1st Qu.:23.37    
+ Median :33.47    
+ Mean   :32.08    
+ 3rd Qu.:38.32    
+ Max.   :48.38    

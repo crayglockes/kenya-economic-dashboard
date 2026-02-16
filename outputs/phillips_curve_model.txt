@@ -1,0 +1,23 @@
+
+Call:
+lm(formula = inflation_cpi ~ unemployment_rate, data = phillips_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.3277 -2.8321 -0.2045  1.0061 16.7346 
+
+Coefficients:
+                  Estimate Std. Error t value Pr(>|t|)
+(Intercept)        13.1101     3.1361   4.180 0.000388
+unemployment_rate  -1.3104     0.8705  -1.505 0.146473
+                     
+(Intercept)       ***
+unemployment_rate    
+---
+Signif. codes:  
+0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.683 on 22 degrees of freedom
+Multiple R-squared:  0.09338,	Adjusted R-squared:  0.05217 
+F-statistic: 2.266 on 1 and 22 DF,  p-value: 0.1465
+

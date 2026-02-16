@@ -175,3 +175,49 @@ processing_log <- tibble(
 )
 
 write_csv(processing_log, "outputs/processing_log.csv")
+
+# ==== ADVANCED VISUALIZATIONS ====
+
+# Visualization 6: Decade Comparison
+decade_data <- kenya_data %>%
+  mutate(decade = paste0(floor(year/10)*10, "s")) %>%
+  group_by(decade) %>%
+  summarise(
+    avg_gdp_growth = mean(gdp_growth_annual, na.rm = TRUE),
+    avg_inflation = mean(inflation_cpi, na.rm = TRUE),
+    avg_trade_deficit = mean(trade_balance_pct_gdp, na.rm = TRUE)
+  ) %>%
+  pivot_longer(-decade, names_to = "metric", values_to = "value")
+
+p6 <- ggplot(decade_data, aes(x = decade, y = value, fill = metric)) +
+  geom_col(position = "dodge") +
+  facet_wrap(~metric, scales = "free_y", ncol = 1) +
+  labs(
+    title = "Kenya Economic Indicators by Decade",
+    subtitle = "Average performance across 2000s, 2010s, and 2020s",
+    x = "Decade",
+    y = "Value"
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+ggsave("outputs/figures/06_decade_comparison.png", p6, width = 10, height = 12, dpi = 300)
+
+# Visualization 7: Debt Trajectory
+p7 <- ggplot(kenya_data, aes(x = year, y = debt_to_gdp_ratio)) +
+  geom_line(size = 1.2, color = "#CC0000") +
+  geom_point(size = 2, color = "#CC0000") +
+  geom_hline(yintercept = 60, linetype = "dashed", color = "gray50") +
+  annotate("text", x = 2005, y = 62, label = "60% Threshold", color = "gray30", size = 3) +
+  labs(
+    title = "Kenya External Debt-to-GDP Ratio (2000-2023)",
+    subtitle = "Rising debt burden crosses sustainability threshold",
+    x = "Year",
+    y = "Debt-to-GDP Ratio (%)",
+    caption = "Source: World Bank WDI | Dashed line = 60% sustainability threshold"
+  ) +
+  theme_minimal()
+
+ggsave("outputs/figures/07_debt_trajectory.png", p7, width = 10, height = 6, dpi = 300)
+
+message("✓ All visualizations complete: 7 figures created")

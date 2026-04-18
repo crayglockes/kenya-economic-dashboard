@@ -1,0 +1,20 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+    background-color: #0F1117 !important;
+}
+.nav-tabs .nav-link {
+    color: #95A5A6 !important;
+    font-size: 13px !important;
+    letter-spacing: 0.5px;
+}
+.nav-tabs .nav-link.active {
+    color: #E8E8E8 !important;
+    background-color: #1A1D27 !important;
+    border-color: #006600 !important;
+}
+.rc-slider-track  { background-color: #006600 !important; }
+.rc-slider-handle { border-color: #006600 !important; }
+@media (max-width: 576px) {
+    h2 { font-size: 1.2rem !important; }
+    .card-body { padding: 10px !important; }
+}

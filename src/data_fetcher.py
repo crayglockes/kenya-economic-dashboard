@@ -2,8 +2,12 @@
 data_fetcher.py
 ---------------
 Fetches Kenyan economic indicators directly from the World Bank REST API v2.
-Uses requests — avoids wbgapi JSON decode errors and gives explicit control
-over parsing. Handles retries, 24h cache, and bundled CSV fallback.
+
+Fallback chain (most to least fresh):
+  1. Valid parquet cache (< 24h)       — fastest, no network
+  2. Live API fetch + write new cache  — current data
+  3. Stale parquet cache (> 24h)       — API was down, serve what we have
+  4. Bundled CSV committed to repo     — last resort, committed at build time
 """
 
 import json
@@ -31,8 +35,7 @@ END_YEAR     = datetime.now().year - 1
 WB_BASE_URL  = "https://api.worldbank.org/v2"
 
 # BX.RES.TOTL.CD (Foreign Reserves) removed — World Bank publishes no data
-# for this indicator at the Kenya country level. Attempting to fetch it
-# returns an empty list, not an error, causing silent NaN columns.
+# for Kenya at country level. Returns empty list, not an error.
 INDICATORS = {
     "NY.GDP.MKTP.CD":    "gdp_usd",
     "NY.GDP.MKTP.KD.ZG": "gdp_growth_pct",
@@ -68,14 +71,12 @@ def fetch_wb_indicator(
     """
     Fetch one indicator from World Bank REST API v2 for Kenya.
 
-    The API returns [metadata_dict, data_list]. Each item in data_list
-    has {"date": "2023", "value": 5.2} or {"date": "2023", "value": null}.
-    Only non-null values are included in the output Series.
+    Returns a Series with an INTEGER year index, or None if the fetch
+    fails or the indicator has no data for Kenya.
 
-    Returns
-    -------
-    pd.Series indexed by integer year, or None if the fetch fails or
-    the indicator has no data for Kenya.
+    Index type is enforced as int here — not left to the caller —
+    because a string year index causes df.loc[2005:2023] to silently
+    return an empty DataFrame, producing blank charts.
     """
     url = (
         f"{WB_BASE_URL}/country/{COUNTRY_CODE}/indicator/{indicator}"
@@ -87,7 +88,6 @@ def fetch_wb_indicator(
             resp = requests.get(url, timeout=30)
             resp.raise_for_status()
 
-            # Explicit JSON parsing with clear error message
             try:
                 payload = resp.json()
             except ValueError as e:
@@ -96,7 +96,6 @@ def fetch_wb_indicator(
                     f"Raw response (first 200 chars): {resp.text[:200]}"
                 ) from e
 
-            # World Bank always wraps data as [metadata, data_list]
             if not isinstance(payload, list) or len(payload) < 2:
                 logger.warning(
                     f"Unexpected response structure for {indicator}: "
@@ -118,15 +117,19 @@ def fetch_wb_indicator(
                 value    = entry.get("value")
                 if year_raw is not None and value is not None:
                     try:
+                        # int() here is the critical step — ensures integer
+                        # year keys so loc-based slicing in the dashboard works
                         records[int(year_raw)] = float(value)
                     except (ValueError, TypeError):
-                        pass  # skip malformed entries
+                        pass
 
             if not records:
                 logger.warning(f"All values null for {indicator} ({col_name})")
                 return None
 
-            series = pd.Series(records, name=col_name)
+            full_index = range(START_YEAR, END_YEAR + 1)
+            series = pd.Series(records, name=col_name).reindex(full_index)
+            series.index = series.index.astype(int)   # belt-and-suspenders
             series.index.name = "year"
             return series.sort_index()
 
@@ -157,8 +160,9 @@ def _metadata_path() -> Path:
 
 
 def _is_cache_valid() -> bool:
+    """True only if cache exists AND is younger than CACHE_TTL_HOURS."""
     meta_path = _metadata_path()
-    if not meta_path.exists():
+    if not meta_path.exists() or not _cache_path().exists():
         return False
     try:
         with open(meta_path) as f:
@@ -169,6 +173,42 @@ def _is_cache_valid() -> bool:
         return age_hours < CACHE_TTL_HOURS
     except (json.JSONDecodeError, KeyError, ValueError):
         return False
+
+
+def _load_parquet(path: Path) -> pd.DataFrame:
+    """
+    Load a parquet file and enforce integer year index.
+
+    This is the single place where parquet is read — enforcing int index
+    here means every code path (valid cache, stale cache) gets the right type.
+    """
+    df = pd.read_parquet(path)
+    df.index = df.index.astype(int)
+    df.index.name = "year"
+    return df
+
+
+def _load_stale_cache() -> Optional[pd.DataFrame]:
+    """
+    Load the parquet cache regardless of age.
+
+    Used as a fallback when the live API is unreachable. Stale data is
+    always fresher than the bundled CSV committed at build time.
+    """
+    cache = _cache_path()
+    if not cache.exists():
+        return None
+    try:
+        df = _load_parquet(cache)
+        logger.warning(
+            "⚠️  Serving STALE cache (API unreachable). "
+            "Data may be up to several days old. "
+            "Cache will refresh automatically on next successful API call."
+        )
+        return df
+    except Exception as e:
+        logger.error(f"Could not load stale cache: {e}")
+        return None
 
 
 def _save_metadata(row_count: int) -> None:
@@ -185,28 +225,28 @@ def _save_metadata(row_count: int) -> None:
 
 def fetch_all_indicators(force_refresh: bool = False) -> pd.DataFrame:
     """
-    Fetch all indicators via World Bank REST API v2.
+    Return a DataFrame of all indicators indexed by integer year.
 
-    Falls back to the bundled CSV committed to data/raw/ if the live
-    API fails — prevents cold-start 500 errors on Render's ephemeral
-    filesystem where the parquet cache is wiped on every spin-up.
+    Fallback chain:
+      1. Valid parquet cache (< 24h old)  → return immediately
+      2. Live API fetch                   → write new cache, return
+      3. Stale parquet cache (any age)    → return with warning
+      4. Bundled CSV from repo            → return with warning
+      5. RuntimeError                     → nothing worked
 
-    Parameters
-    ----------
-    force_refresh : bool
-        Bypass cache and re-fetch from API.
-
-    Returns
-    -------
-    pd.DataFrame indexed by year (int), one column per indicator.
+    The stale-cache tier (step 3) is the critical addition: it ensures
+    the dashboard stays functional across API outages that outlast the
+    24-hour cache TTL, which is the failure mode seen in deployment.
     """
     cache = _cache_path()
 
-    if not force_refresh and cache.exists() and _is_cache_valid():
-        logger.info("Loading from parquet cache...")
-        return pd.read_parquet(cache)
+    # ── Tier 1: valid cache ────────────────────────────────────────────────
+    if not force_refresh and _is_cache_valid():
+        logger.info("Loading from valid parquet cache...")
+        return _load_parquet(cache)
 
-    logger.info(f"Fetching {len(INDICATORS)} indicators from World Bank REST API v2...")
+    # ── Tier 2: live API fetch ─────────────────────────────────────────────
+    logger.info(f"Fetching {len(INDICATORS)} indicators from World Bank REST API...")
     series_list = []
     failed      = []
 
@@ -214,12 +254,9 @@ def fetch_all_indicators(force_refresh: bool = False) -> pd.DataFrame:
         for wb_code, col_name in INDICATORS.items():
             series = fetch_wb_indicator(wb_code, col_name)
             if series is not None:
-                # Reindex to full year range so all series align on concat
-                full_index = range(START_YEAR, END_YEAR + 1)
-                series = series.reindex(full_index)
                 series_list.append(series)
                 non_null = series.notna().sum()
-                logger.info(f"  ✅ {col_name} ({non_null}/{len(full_index)} years)")
+                logger.info(f"  ✅ {col_name} ({non_null}/{END_YEAR - START_YEAR + 1} years)")
             else:
                 failed.append(wb_code)
                 logger.error(f"  ❌ {col_name}")
@@ -228,34 +265,49 @@ def fetch_all_indicators(force_refresh: bool = False) -> pd.DataFrame:
             raise RuntimeError("No indicators fetched successfully from API.")
 
         df = pd.concat(series_list, axis=1)
+        df.index = df.index.astype(int)   # enforce int after concat
         df.index.name = "year"
-        df.to_parquet(cache)           # requires pyarrow — now in requirements.txt
+
+        df.to_parquet(cache)
         _save_metadata(len(df))
-        logger.info(f"Cached {len(df)} rows × {len(df.columns)} columns.")
+        logger.info(f"✅ Cached {len(df)} rows × {len(df.columns)} columns.")
 
         if failed:
-            logger.warning(f"Failed indicators (will be NaN columns): {failed}")
+            logger.warning(f"Failed indicators (NaN columns): {failed}")
 
         return df
 
     except Exception as e:
         logger.error(f"Live API fetch failed: {e}")
-        if BUNDLED_DATA_PATH.exists():
-            logger.warning("Falling back to bundled repo CSV.")
-            return pd.read_csv(BUNDLED_DATA_PATH, index_col="year")
-        raise RuntimeError(
-            "API unreachable and no bundled data found. "
-            "Run fetch_all_indicators(force_refresh=True) in Colab and commit "
-            "the output to data/raw/bundled_kenya_data.csv."
-        ) from e
+
+    # ── Tier 3: stale parquet cache ────────────────────────────────────────
+    stale = _load_stale_cache()
+    if stale is not None:
+        return stale
+
+    # ── Tier 4: bundled CSV committed to repo ─────────────────────────────
+    if BUNDLED_DATA_PATH.exists():
+        logger.warning("⚠️  Falling back to bundled repo CSV (oldest data source).")
+        df = pd.read_csv(BUNDLED_DATA_PATH, index_col="year")
+        df.index = df.index.astype(int)   # CSV index may read as int64 or object
+        df.index.name = "year"
+        return df
+
+    # ── Tier 5: nothing worked ─────────────────────────────────────────────
+    raise RuntimeError(
+        "All data sources failed: API unreachable, no parquet cache, "
+        "and no bundled CSV found at data/raw/bundled_kenya_data.csv. "
+        "Run fetch_all_indicators(force_refresh=True) in Colab and commit "
+        "the output CSV before redeploying."
+    )
 
 
 # ── Validation ─────────────────────────────────────────────────────────────────
 
 def validate_dataframe(df: pd.DataFrame) -> dict:
-    """Return a validation summary dict."""
     return {
         "shape":         df.shape,
+        "index_dtype":   str(df.index.dtype),          # new: confirm int not object
         "year_range":    (int(df.index.min()), int(df.index.max())),
         "missing_pct":   round(df.isnull().mean().mean() * 100, 2),
         "complete_rows": int((~df.isnull().any(axis=1)).sum()),

@@ -87,7 +87,11 @@ def build_kpi_row(filtered_df: pd.DataFrame) -> dbc.Row:
     latest_year = int(filtered_df.index.max())
 
     def get_latest_and_delta(col):
+        if col not in filtered_df.columns:
+            return float("nan"), float("nan")
         series = filtered_df[col].dropna()
+        if series.empty:
+            return float("nan"), float("nan")
         latest = series.iloc[-1]
         prev   = series.iloc[-2] if len(series) >= 2 else latest
         return latest, latest - prev

@@ -126,13 +126,23 @@ def plot_inflation_vs_gdp_per_capita(df: pd.DataFrame) -> go.Figure:
 def plot_debt_gauge(df: pd.DataFrame) -> go.Figure:
     """
     Gauge chart for government debt % GDP.
-    Guards against IndexError when fewer than two data points are visible
-    (e.g. when the user narrows the year slider to a single year).
+    Returns an empty-state figure if the column is missing or all-NaN.
     """
+    if "govt_debt_pct_gdp" not in df.columns or df["govt_debt_pct_gdp"].dropna().empty:
+        fig = go.Figure()
+        fig.update_layout(
+            paper_bgcolor=COLORS["bg"], font=FONT, height=250,
+            annotations=[dict(
+                text="Govt Debt data<br>unavailable",
+                x=0.5, y=0.5, xref="paper", yref="paper",
+                showarrow=False,
+                font=dict(size=14, color=COLORS["neutral"])
+            )]
+        )
+        return fig
     series      = df["govt_debt_pct_gdp"].dropna()
     latest_debt = series.iloc[-1]
     latest_year = series.index[-1]
-    # Safe fallback: if only one observation, delta reference equals the value itself
     prev_debt   = series.iloc[-2] if len(series) >= 2 else latest_debt
 
     fig = go.Figure(go.Indicator(

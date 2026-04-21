@@ -123,9 +123,16 @@ def fetch_wb_indicator(
                     except (ValueError, TypeError):
                         pass
 
-            if not records:
-                logger.warning(f"All values null for {indicator} ({col_name})")
-                return None
+        if not records:
+            logger.warning(
+                f"All values null for {indicator} ({col_name}) — "
+                f"including as NaN column so downstream code does not crash."
+            )
+            full_index = range(START_YEAR, END_YEAR + 1)
+            series = pd.Series(float("nan"), index=list(full_index), name=col_name)
+            series.index = series.index.astype(int)
+            series.index.name = "year"
+            return series
 
             full_index = range(START_YEAR, END_YEAR + 1)
             series = pd.Series(records, name=col_name).reindex(full_index)

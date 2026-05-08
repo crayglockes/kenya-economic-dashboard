@@ -41,7 +41,7 @@ sustainability, and financial inclusion.
 ## Local Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/kenya-economic-dashboard
+git clone https://github.com/crayglockes/kenya-economic-dashboard
 cd kenya-economic-dashboard
 pip install -r requirements.txt
 python app/dashboard.py
